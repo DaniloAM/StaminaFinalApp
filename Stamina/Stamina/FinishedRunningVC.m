@@ -27,6 +27,9 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [self showBarWithAnimation:true];
+    [self removeGesture];
+    
     [[self routeNameTextField] setDelegate:self];
     
     if(_route) {
@@ -38,18 +41,24 @@
     
     
     //Set bar button actions and images
-    [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage imageNamed:@"icon_home.png"]];
+    [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
     
-    [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icon_calendario.png"]];
+    [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
     
-    [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage imageNamed: @"icone_pontuacao.png"]];
+    [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
     
 
     
     //Set buttons images and actions
-    [self setButtonImageNameLeft:@"icon_add_unable.png" andRight:@"icon_compartilha_unable.png"];
+    [self setButtonImageNameLeft:@"icone_add_trajeto.png" andRight:@"icone_compartilhar_trajeto.png"];
     
     [self setButtonActionLeft:@selector(enableRouteNameTextField) andRight:@selector(selectSharingOption)];
+    
+    UISwipeGestureRecognizer *rightSlide = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSlideAction)];
+    
+    rightSlide.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [self.view addGestureRecognizer:rightSlide];
     
 }
 
@@ -157,14 +166,15 @@
 
 -(void)setButtonImageNameLeft: (NSString *)left andRight: (NSString *)right {
     
-    [[self leftButton] setBackgroundImage:[UIImage imageNamed:left] forState:UIControlStateNormal];
-    [[self rightButton] setBackgroundImage:[UIImage imageNamed:right] forState:UIControlStateNormal];
+    [[self leftButton] setStaminaImageName:left];
+    [[self rightButton] setStaminaImageName:right];
     
 }
 
 
 -(void)enableRouteNameTextField {
     
+    _state = 1;
     _saveRoute = true;
     
     [[self routeNameTextField] setHidden:false];
@@ -172,13 +182,13 @@
     [[self leftButton] setHidden:true];
     [[self rightButton] setHidden:true];
     
-    [self thirdButtonMethod:@selector(confirmRouteName) fromClass:self  withImage:[UIImage imageNamed: @"icone_ok.png"]];
+    [self thirdButtonMethod:@selector(confirmRouteName) fromClass:self  withImage:[UIImage imageNamed: @"icone_ok_tab.png"]];
 }
 
 
 -(void)confirmRouteName {
     
-    
+    _state = 0;
     [[self routeNameTextField] setHidden:true];
     
     [[self leftButton] setHidden:false];
@@ -188,14 +198,15 @@
         [self setSaveRoute:false];
     }
     
-    [self thirdButtonMethod:@selector(goToRankingPoints) fromClass:self  withImage:[UIImage imageNamed: @"icone_pontuacao.png"]];
+    [self thirdButtonMethod:@selector(goToRankingPoints) fromClass:self  withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
     
 }
 
 
 -(void)selectSharingOption {
     
-    [self setButtonImageNameLeft:@"icon_trajeto_unable.png" andRight:@"icon_camera_unable.png"];
+    _state = 2;
+    [self setButtonImageNameLeft:@"icone_trajeto_compartilhar.png" andRight:@"icone_foto.png"];
     [self setButtonActionLeft:nil andRight:@selector(goSharePicture)];
     
 }
@@ -205,7 +216,7 @@
     
     
     if(_state == 0) {
-        [self.navigationController popViewControllerAnimated:true];
+        [self.navigationController popViewControllerAnimated:YES];
     }
     
     if(_state == 1) {
@@ -213,17 +224,31 @@
     }
     
     if(_state == 1 || _state == 2) {
+        
+        _state = 0;
+        
+        [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+        
+        [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
+        
+        [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
        
-        [self setButtonImageNameLeft:@"icon_add_unable.png" andRight:@"icon_compartilha_unable.png"];
+        [self setButtonImageNameLeft:@"icone_add_trajeto.png" andRight:@"icone_compartilhar_trajeto.png"];
+        
+        [[self leftButton] setHidden:false];
+        [[self rightButton] setHidden:false];
+        
+        [[self routeNameTextField] setHidden:true];
         
         [self setButtonActionLeft:@selector(enableRouteNameTextField) andRight:@selector(selectSharingOption)];
+        
     }
     
 
 }
 
 -(void)goToCalendar {
-    
+    [self callViewWithName:@"Calendar"];
 }
 
 -(void)goToRankingPoints {

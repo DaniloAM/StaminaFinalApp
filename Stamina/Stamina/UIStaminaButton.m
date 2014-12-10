@@ -11,17 +11,20 @@
 @implementation UIStaminaButton : UIButton
 
 
+
 -(id)initWithStaminaImageName:(NSString *)imageName {
     
-    self = [super init];
+    self = [UIButton buttonWithType:UIButtonTypeCustom];
     
     if(self) {
         
-        [self setStaminaImageName:imageName];
+        UIButton *btn = self;
         
-        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        UIImage *normal = [UIImage imageNamed:imageName];
+        UIImage *selected = [UIImage imageNamed:[NSString stringWithFormat:@"s_%@", imageName]];
         
-        [self setImage:[UIImage imageNamed:[NSString stringWithFormat:@"s_%@", imageName]] forState:UIControlStateHighlighted];
+        [btn setImage:normal forState:UIControlStateNormal];
+        [btn setImage:selected forState:UIControlStateHighlighted];
         
     }
     
@@ -29,13 +32,14 @@
     
 }
 
+
 -(void)setStaminaImageName: (NSString *)imageName {
     
-    [self setStaminaImageName:imageName];
+    UIImage *normal = [UIImage imageNamed:imageName];
+     UIImage *selected = [UIImage imageNamed:[NSString stringWithFormat:@"s_%@", imageName]];
     
-    [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    
-    [self setImage:[UIImage imageNamed:[NSString stringWithFormat:@"s_%@", imageName]] forState:UIControlStateHighlighted];
+    [self setImage:normal forState:UIControlStateNormal];
+    [self setImage:selected forState:UIControlStateHighlighted];
     
 }
 

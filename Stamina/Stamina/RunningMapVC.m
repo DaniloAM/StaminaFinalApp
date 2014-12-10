@@ -83,6 +83,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [super hideBarWithAnimation:true];
 }
 
 
@@ -92,7 +93,6 @@
     [[self locationManager] startUpdatingLocation];
     [[self mapRunningView] setShowsUserLocation:true];
     
-    [super hideBarWithAnimation:true];
     
     if([self isWaitingForPicture]) {
         [self setIsWaitingForPicture:false];
@@ -102,7 +102,7 @@
         }
     }
     
-    [self zoomToUserRegion];
+    [self performSelector:@selector(zoomToUserRegion) withObject:nil afterDelay:1.0];
 }
 
 
@@ -140,12 +140,13 @@
         
         CLLocationDistance distance = [_oldLocation distanceFromLocation:newLocation];
         
-        if([self isRunning])
+        if([self isRunning]) {
             _distanceInMeters += distance;
         
-        [self drawRouteLayerWithPointOne:_oldLocation andTwo:newLocation];
+            [self drawRouteLayerWithPointOne:_oldLocation andTwo:newLocation];
         
-        [[self locationsArray] addObject:newLocation];
+            [[self locationsArray] addObject:newLocation];
+        }
         
         _oldLocation = newLocation;
     }

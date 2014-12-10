@@ -11,9 +11,11 @@
 
 @interface UIStaminaButton : UIButton {
 
-    NSString *staminaImageName;
+    NSString *buttonImageName;
     
 }
 
+-(id)initWithStaminaImageName:(NSString *)imageName;
+-(void)setStaminaImageName: (NSString *)imageName;
 
 @end

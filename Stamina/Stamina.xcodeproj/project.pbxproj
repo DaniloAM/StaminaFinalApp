@@ -171,6 +171,7 @@
 		FF1D8DE31A38AC1700E52110 /* UIStaminaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */; };
 		FF1D8DE61A38AFBD00E52110 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */; };
 		FF5911331A38CC4E004208FA /* stamina_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911321A38CC4E004208FA /* stamina_logo.png */; };
+		FF5911361A38DE4F004208FA /* icone_calendario_tab_06.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */; };
 		FF951BDD1A28E52A00E581AB /* GNComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD61A28E52A00E581AB /* GNComponent.m */; };
 		FF951BDE1A28E52A00E581AB /* GraphicScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD81A28E52A00E581AB /* GraphicScroller.m */; };
 		FF951BDF1A28E52A00E581AB /* GraphUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BDA1A28E52A00E581AB /* GraphUpdater.m */; };
@@ -410,6 +411,7 @@
 		FF1D8DE41A38AFBD00E52110 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		FF5911321A38CC4E004208FA /* stamina_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamina_logo.png; sourceTree = "<group>"; };
+		FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_calendario_tab_06.png; sourceTree = "<group>"; };
 		FF951BD51A28E52A00E581AB /* GNComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNComponent.h; sourceTree = "<group>"; };
 		FF951BD61A28E52A00E581AB /* GNComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNComponent.m; sourceTree = "<group>"; };
 		FF951BD71A28E52A00E581AB /* GraphicScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicScroller.h; sourceTree = "<group>"; };
@@ -918,6 +920,7 @@
 		FF1D8DCC1A38AAB900E52110 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				FF5911341A38DE3C004208FA /* CalendarTabbar */,
 				FF1D8DCD1A38AAE100E52110 /* icone_adicionar_tab.png */,
 				FF1D8DCE1A38AAE100E52110 /* icone_cancelar_tab.png */,
 				FF1D8DCF1A38AAE100E52110 /* icone_compartilhar_tab.png */,
@@ -930,6 +933,14 @@
 				FF1D8DD61A38AAE100E52110 /* icone_voltar_tab.png */,
 			);
 			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		FF5911341A38DE3C004208FA /* CalendarTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */,
+			);
+			name = CalendarTabbar;
 			sourceTree = "<group>";
 		};
 		FF794D7819CA28BA00808144 /* CoreData */ = {
@@ -1152,6 +1163,7 @@
 				FF1D8D7F1A38A89E00E52110 /* exercicio_teste1.png in Resources */,
 				FF1D8DBA1A38AA3200E52110 /* icone_camerar_capturar.png in Resources */,
 				FF1D8D8B1A38A8DA00E52110 /* s_icone_academia.png in Resources */,
+				FF5911361A38DE4F004208FA /* icone_calendario_tab_06.png in Resources */,
 				C5B62C181A1525F400F969D8 /* Lato-SemiboldItalic.ttf in Resources */,
 				FF1D8D821A38A89E00E52110 /* exercicio_teste4.png in Resources */,
 				FF1D8DAC1A38A9FC00E52110 /* icone_km.png in Resources */,

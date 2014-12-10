@@ -25,9 +25,9 @@
     UserData *user = [UserData alloc];
     [[self nickName] setText:[user nickName]];
     NSString *str = [NSString stringWithFormat:@"icone_calendario_%02ld.png",(long)day];
-    [self firstButtonMethod:nil  fromClass:self  withImage:[UIImage imageNamed:str]];
-    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icon_compartilhar.png"]];
-    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icon_pontuacao.png"]];
+    [self firstButtonMethod:nil  fromClass:self  withImage:[UIImage imageNamed:@"icone_compartilhar_tab.png"]];
+    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
+    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_pontuacao_tab.png"]];
     self.navigationItem.hidesBackButton = YES;
     [self addToButton:_academiaBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_academia.png"] andNormal:[UIImage imageNamed:@"icone_academia.png"]];
     [self addToButton:_runningBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_caminhada.png"] andNormal:[UIImage imageNamed:@"icone_caminhada.png"]];

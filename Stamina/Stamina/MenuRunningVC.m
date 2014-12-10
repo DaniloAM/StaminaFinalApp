@@ -36,6 +36,12 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    
+    [self firstButtonMethod:nil  fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
+    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_adicionar_tab.png"]];
+    
+    
     [self performSelectorInBackground:@selector(showCurrentWeather) withObject:nil];
 }
 
@@ -68,8 +74,7 @@
         [[self temperatureLabel] setText:temp];
     }
     
-    
-    [self performSelector:@selector(showCurrentWeather) withObject:nil afterDelay:30.0];
+    //[self performSelector:@selector(showCurrentWeather) withObject:nil afterDelay:30.0];
     
 }
 

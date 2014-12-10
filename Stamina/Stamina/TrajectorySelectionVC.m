@@ -38,6 +38,13 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    
+    [self firstButtonMethod:@selector(goHome) fromClass:self withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icone_info_user_tab.png"]];
+    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_adicionar_tab.png"]];
+    
+    
+    
     CGRect frame = CGRectMake(
                               
                               // origin X
@@ -62,6 +69,10 @@
     [super viewDidAppear:animated];
     
     
+}
+
+-(void)goHome {
+    [self popToRoot];
 }
 
 
@@ -162,20 +173,20 @@
         
         switch (x) {
             case 0:{
-                imageName = @"icon_calorias.png";
+                imageName = @"icone_calorias.png";
                 infoLabel.text = [NSString stringWithFormat:@"%03d cal", value];
             }
                 break;
             case 1:
-                imageName = @"icon_km.png";
+                imageName = @"icone_km.png";
                 infoLabel.text = [NSString stringWithFormat:@"%03d Km", value];
                 break;
             case 2:
-                imageName = @"icon_cronometro.png";
+                imageName = @"icoen_tempo.png";
                 infoLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", value/60/60, value/60, value%60];
                 break;
             case 3:
-                imageName = @"icon_pontos.png";
+                imageName = @"icone_pontuacao.png";
                 infoLabel.text = [NSString stringWithFormat:@"%04d pts", value];
                 break;
             default:
