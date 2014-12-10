@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "UserData.h"
 #import "WeatherObject.h"
+#import "ServerSupport.h"
 @interface WebServiceResponse : NSObject
 +(NSString*)cadastrarComNome: (NSString *)nome eSenha: (NSString *)password email: (NSString *)email sexo:(BOOL) sexo nickName: (NSString *)nickName;
 +(NSString*)loginComEmailOuNickName: (NSString *)anything eSenha: (NSString *)password;
@@ -23,5 +24,5 @@
 +(NSString*)criaComEmail: (NSString *)email peso: (float )peso_atual sexo: (BOOL )sexo altura: (int )altura idade: (int )idade;
 
 +(WeatherObject *)previsaoDoTempoNaLatitude : (float)lat eLongitude:(float)lon;
-
++(NSString *)insereTreinoWithName: (NSString *)str andDays: (NSArray *)array andstartDate:(NSDate *)dateStart andFinalDate:(NSDate *)finalDate andHour: (NSDate *)hour;
 @end

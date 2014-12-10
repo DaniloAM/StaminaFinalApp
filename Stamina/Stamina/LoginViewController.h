@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "WebServiceResponse.h"
 #import "UserData.h"
-#import "Reachability.h"
-#import <SystemConfiguration/SystemConfiguration.h>
 #import "CadastroVC.h"
+#import "ServerSupport.h"
 @interface LoginViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *login;
 @property (weak, nonatomic) IBOutlet UITextField *password;

@@ -179,7 +179,7 @@
     NSArray *sexo = [json valueForKeyPath:@"sexo"];
     NSArray *nick = [json valueForKeyPath:@"nickname"];
     NSArray *email = [json valueForKeyPath:@"email"];
-
+    NSArray *userId = [json valueForKeyPath:@"id"];
     UserData *userData = [UserData alloc];
     [userData setName:[nome objectAtIndex:0]];
     [userData setWeightInKilograms:[[peso_atual objectAtIndex:0] intValue]];
@@ -189,6 +189,7 @@
     [userData setEmail:[email objectAtIndex:0]];
     [userData setNickName:[nick objectAtIndex:0]];
     [userData setSex:[[sexo objectAtIndex:0] boolValue]];
+    [userData setUserID:[[userId objectAtIndex:0] intValue]];
     return 1;
 
 }
@@ -200,7 +201,7 @@
     [self moveView:[self logo] withPoint:CGPointMake(size.origin.x,85) withDuration:0.2];
 
     [self setDown:NO];
-    
+
     [[self view] endEditing:YES];
     [self resignFirstResponder];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -220,7 +221,7 @@
         [usr setEmail:nil];
         [usr setName:nil];
         [usr setPassword:nil];
-        [self presentError:0 :nil];
+        [self presentError:0 :@"Verifique a conexão com a internet"];
         return;
     }
         }
@@ -240,6 +241,7 @@
         [self presentError:0 :str];
         return;
     }
+    
     UserData *userData = [UserData alloc];
     [userData setPassword:[[self password] text]];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -299,9 +301,7 @@
 
 - (BOOL)connected
 {
-    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-    NetworkStatus networkStatus = [reachability currentReachabilityStatus];
-    return networkStatus != NotReachable;
+    return [ServerSupport getConnectivity];
 }
 
 

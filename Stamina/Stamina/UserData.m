@@ -55,6 +55,12 @@
     _nickName = nil;
     _email = nil;
     _password = nil;
+    [self deleteAllObjects:@"TrainingExercises"];
+    [self deleteAllObjects:@"TrainingDayObject"];
+    [self deleteAllObjects:@"TrajectoryFile"];
+    [self deleteAllObjects:@"TrajectoryRoute"];
+    [self deleteAllObjects:@"Training"];
+
 
 }
 -(void)addExerciseWithTrainingExercise: (TrainingExercises *)newExercise {
@@ -191,7 +197,7 @@
     [defaults setObject:[self nickName] forKey:@"ud_nickname"];
     [defaults setObject:[self email] forKey:@"ud_email"];
     [defaults setObject:[self name] forKey:@"ud_name"];
-    
+    [defaults setInteger:(NSInteger)[self userID] forKey:@"ud_id"];
     
     [defaults synchronize];
     
@@ -217,7 +223,28 @@
     _sex  = [defaults boolForKey:@"ud_sex"];
     _age  = (int)[defaults integerForKey:@"ud_age"];
     _timeAlarmBeforeTraining = (int)[defaults integerForKey:@"ud_timebefore"];
+    _userID = (int)[defaults integerForKey:@"ud_id"];
 }
 
-
+- (void) deleteAllObjects: (NSString *) entityDescription  {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [delegate managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *items = [context executeFetchRequest:fetchRequest error:&error];
+    
+    
+    for (NSManagedObject *managedObject in items) {
+        [context deleteObject:managedObject];
+        NSLog(@"%@ object deleted",entityDescription);
+    }
+    if (![context save:&error]) {
+        NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+    }
+    
+}
 @end
