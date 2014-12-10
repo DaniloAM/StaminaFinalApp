@@ -104,7 +104,6 @@
 		FF1596F319C0CBC900D9236F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1596F219C0CBC900D9236F /* AppDelegate.m */; };
 		FF1596F619C0CBC900D9236F /* Stamina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1596F419C0CBC900D9236F /* Stamina.xcdatamodeld */; };
 		FF1596FE19C0CBC900D9236F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1596FD19C0CBC900D9236F /* Images.xcassets */; };
-		FF15970A19C0CBC900D9236F /* StaminaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF15970919C0CBC900D9236F /* StaminaTests.m */; };
 		FF1597AE19C0DA5A00D9236F /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF15979E19C0DA5A00D9236F /* UserData.m */; };
 		FF15998519C0E32200D9236F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF15987519C0E32100D9236F /* FacebookSDK.framework */; };
 		FF159A4C19C21D1B00D9236F /* CoreDataLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = FF159A4B19C21D1B00D9236F /* CoreDataLoading.m */; };
@@ -171,6 +170,7 @@
 		FF1D8DE01A38AAE100E52110 /* icone_voltar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DD61A38AAE100E52110 /* icone_voltar_tab.png */; };
 		FF1D8DE31A38AC1700E52110 /* UIStaminaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */; };
 		FF1D8DE61A38AFBD00E52110 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */; };
+		FF5911331A38CC4E004208FA /* stamina_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911321A38CC4E004208FA /* stamina_logo.png */; };
 		FF951BDD1A28E52A00E581AB /* GNComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD61A28E52A00E581AB /* GNComponent.m */; };
 		FF951BDE1A28E52A00E581AB /* GraphicScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD81A28E52A00E581AB /* GraphicScroller.m */; };
 		FF951BDF1A28E52A00E581AB /* GraphUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BDA1A28E52A00E581AB /* GraphUpdater.m */; };
@@ -183,16 +183,6 @@
 		FFB8BCC81A0AA3DC00F9D8A7 /* TrajectoryRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB8BCC71A0AA3DC00F9D8A7 /* TrajectoryRoute.m */; };
 		FFF51A5219E48066000BED6B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF51A5119E48066000BED6B /* Social.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FF15970419C0CBC900D9236F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF1596E219C0CBC900D9236F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF1596E919C0CBC900D9236F;
-			remoteInfo = Stamina;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		324E23C019E87FC400DA2FDE /* CategoriaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaVC.h; sourceTree = "<group>"; };
@@ -334,7 +324,6 @@
 		FF1596F219C0CBC900D9236F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FF1596F519C0CBC900D9236F /* Stamina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stamina.xcdatamodel; sourceTree = "<group>"; };
 		FF1596FD19C0CBC900D9236F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FF15970319C0CBC900D9236F /* StaminaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaminaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF15970819C0CBC900D9236F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF15970919C0CBC900D9236F /* StaminaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaminaTests.m; sourceTree = "<group>"; };
 		FF15979D19C0DA5A00D9236F /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -420,6 +409,7 @@
 		FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStaminaButton.m; sourceTree = "<group>"; };
 		FF1D8DE41A38AFBD00E52110 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
 		FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		FF5911321A38CC4E004208FA /* stamina_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamina_logo.png; sourceTree = "<group>"; };
 		FF951BD51A28E52A00E581AB /* GNComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNComponent.h; sourceTree = "<group>"; };
 		FF951BD61A28E52A00E581AB /* GNComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNComponent.m; sourceTree = "<group>"; };
 		FF951BD71A28E52A00E581AB /* GraphicScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicScroller.h; sourceTree = "<group>"; };
@@ -452,13 +442,6 @@
 				FFF51A5219E48066000BED6B /* Social.framework in Frameworks */,
 				C5EB6C1119D9DD5D00C528FC /* MapKit.framework in Frameworks */,
 				FF15998519C0E32200D9236F /* FacebookSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF15970019C0CBC900D9236F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +612,6 @@
 			isa = PBXGroup;
 			children = (
 				FF1596EA19C0CBC900D9236F /* Stamina.app */,
-				FF15970319C0CBC900D9236F /* StaminaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -860,6 +842,7 @@
 		FF1D8D841A38A8C000E52110 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FF5911321A38CC4E004208FA /* stamina_logo.png */,
 				FF1D8D851A38A8DA00E52110 /* icone_academia.png */,
 				FF1D8D861A38A8DA00E52110 /* icone_caminhada.png */,
 				FF1D8D871A38A8DA00E52110 /* s_icone_academia.png */,
@@ -1058,24 +1041,6 @@
 			productReference = FF1596EA19C0CBC900D9236F /* Stamina.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF15970219C0CBC900D9236F /* StaminaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF15971019C0CBC900D9236F /* Build configuration list for PBXNativeTarget "StaminaTests" */;
-			buildPhases = (
-				FF1596FF19C0CBC900D9236F /* Sources */,
-				FF15970019C0CBC900D9236F /* Frameworks */,
-				FF15970119C0CBC900D9236F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF15970519C0CBC900D9236F /* PBXTargetDependency */,
-			);
-			name = StaminaTests;
-			productName = StaminaTests;
-			productReference = FF15970319C0CBC900D9236F /* StaminaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1087,11 +1052,6 @@
 				TargetAttributes = {
 					FF1596E919C0CBC900D9236F = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					FF15970219C0CBC900D9236F = {
-						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = FEMX6BFS4F;
-						TestTargetID = FF1596E919C0CBC900D9236F;
 					};
 				};
 			};
@@ -1110,7 +1070,6 @@
 			projectRoot = "";
 			targets = (
 				FF1596E919C0CBC900D9236F /* Stamina */,
-				FF15970219C0CBC900D9236F /* StaminaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1188,6 +1147,7 @@
 				FF1D8DC91A38AA7200E52110 /* s_icone_alternar.png in Resources */,
 				C5B62C161A1525F400F969D8 /* Lato-Regular.ttf in Resources */,
 				C5B62C171A1525F400F969D8 /* Lato-Semibold.ttf in Resources */,
+				FF5911331A38CC4E004208FA /* stamina_logo.png in Resources */,
 				FF1D8DB01A38A9FC00E52110 /* s_icone_foto_trajeto.png in Resources */,
 				FF1D8D7F1A38A89E00E52110 /* exercicio_teste1.png in Resources */,
 				FF1D8DBA1A38AA3200E52110 /* icone_camerar_capturar.png in Resources */,
@@ -1221,14 +1181,6 @@
 				FF1D8DAE1A38A9FC00E52110 /* icone_usuario.png in Resources */,
 				C5B62C531A1527F600F969D8 /* icone_calendario_25.png in Resources */,
 				C5B62C491A1527F600F969D8 /* icone_calendario_15.png in Resources */,
-				C50043101A3758F80072834C /* icone_academia.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF15970119C0CBC900D9236F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1311,23 +1263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF1596FF19C0CBC900D9236F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF15970A19C0CBC900D9236F /* StaminaTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FF15970519C0CBC900D9236F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF1596E919C0CBC900D9236F /* Stamina */;
-			targetProxy = FF15970419C0CBC900D9236F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FF15970B19C0CBC900D9236F /* Debug */ = {
@@ -1446,44 +1382,6 @@
 			};
 			name = Release;
 		};
-		FF15971119C0CBC900D9236F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stamina.app/Stamina";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StaminaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		FF15971219C0CBC900D9236F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stamina.app/Stamina";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = StaminaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1501,15 +1399,6 @@
 			buildConfigurations = (
 				FF15970E19C0CBC900D9236F /* Debug */,
 				FF15970F19C0CBC900D9236F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF15971019C0CBC900D9236F /* Build configuration list for PBXNativeTarget "StaminaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF15971119C0CBC900D9236F /* Debug */,
-				FF15971219C0CBC900D9236F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
