@@ -23,14 +23,12 @@
     _selected =1;
     [self setInicio:nil];
     [self.view setBackgroundColor:[UIColor staminaYellowColor]];
-    CreateTrainTemp *create = [CreateTrainTemp alloc];
     _trainoNomeTxt.delegate = self;
     _tableExercicios.rowHeight = 30;
     _tableExercicios.delegate = self;
     _tableExercicios.dataSource = self;
     _tableExercicios.backgroundColor = [UIColor clearColor];
     _arrayOfDays = [NSMutableArray array];
-    [[create arrayOfExercises] removeAllObjects];
     for(int x = 0 ; x < 7; x++){
         NSNumber *num = [NSNumber numberWithInt:0];
         [_arrayOfDays addObject:num];
@@ -152,7 +150,7 @@
         [self displayAlertWithString:@"Adicione algum dia para fazer o exercicio" comCabecalho:@"Erro"];
         return;
     }
-    [self saveTraining];
+    [self performSelectorInBackground:@selector(saveTraining) withObject:self];
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)saveTraining{

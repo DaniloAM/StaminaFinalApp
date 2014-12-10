@@ -30,7 +30,7 @@
     [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icon_pontuacao.png"]];
     self.navigationItem.hidesBackButton = YES;
     [self addToButton:_academiaBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_academia.png"] andNormal:[UIImage imageNamed:@"icone_academia.png"]];
-    [self addToButton:_runningBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_caminhada.png"] andNormal:[UIImage imageNamed:@"icone_caminhada.png"]];
+    //[self addToButton:_runningBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_caminhada.png"] andNormal:[UIImage imageNamed:@"icone_caminhada.png"]];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];

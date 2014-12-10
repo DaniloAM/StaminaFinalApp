@@ -23,5 +23,5 @@
 +(NSString*)criaComEmail: (NSString *)email peso: (float )peso_atual sexo: (BOOL )sexo altura: (int )altura idade: (int )idade;
 
 +(WeatherObject *)previsaoDoTempoNaLatitude : (float)lat eLongitude:(float)lon;
-
++(NSString *)insereTreinoWithName: (NSString *)str andDays: (NSArray *)array andstartDate:(NSDate *)dateStart andFinalDate:(NSDate *)finalDate andHour: (NSDate *)hour;
 @end

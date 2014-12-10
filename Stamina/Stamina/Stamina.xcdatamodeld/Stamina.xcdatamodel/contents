@@ -55,11 +55,11 @@
     </entity>
     <elements>
         <element name="Exercises" positionX="-18" positionY="27" width="128" height="118"/>
+        <element name="ExerciseTip" positionX="-9" positionY="162" width="128" height="73"/>
         <element name="Training" positionX="-9" positionY="126" width="128" height="210"/>
         <element name="TrainingDayObject" positionX="0" positionY="108" width="128" height="163"/>
         <element name="TrainingExercises" positionX="-18" positionY="117" width="128" height="118"/>
         <element name="TrajectoryFile" positionX="0" positionY="135" width="128" height="103"/>
         <element name="TrajectoryRoute" positionX="-9" positionY="126" width="128" height="105"/>
-        <element name="ExerciseTip" positionX="-9" positionY="162" width="128" height="73"/>
     </elements>
 </model>

@@ -139,10 +139,11 @@
     return novo;
     
 }
++(NSString *)insereTreinoWithName: (NSString *)str andDays: (NSArray *)array andstartDate:(NSDate *)dateStart andFinalDate:(NSDate *)finalDate andHour: (NSDate *)hour{
+    NSString *url = @"http://54.207.112.185/joao/insereTreino.php";
+    UserData *user = [UserData alloc];
+    NSString *post = [NSString stringWithFormat:@"domingo=%d&segunda=%d&terca=%d&quarta=%d&quinta=%d&sexta=%d&sabado=%d&trainingName=%@&dataFinal=%@&dataInicial=%@&hora=%@&idUsuario=%d", [[array objectAtIndex:0] boolValue], [[array objectAtIndex:1] boolValue],[[array objectAtIndex:2] boolValue],[[array objectAtIndex:3] boolValue],[[array objectAtIndex:4] boolValue],[[array objectAtIndex:5] boolValue],[[array objectAtIndex:6] boolValue], str, dateStart , finalDate, hour, [user userID]];
+    return [self doTheRequest:post andUrl:url];
+}
 
-//$email = $_REQUEST["nome"];
-//$sexo = $_REQUEST["sexo"];
-//$peso_atual = $_REQUEST["peso_atual"];
-//$idade = $_REQUEST["idade"];
-//$altura = $_REQUEST["altura"];
 @end

@@ -179,7 +179,7 @@
     NSArray *sexo = [json valueForKeyPath:@"sexo"];
     NSArray *nick = [json valueForKeyPath:@"nickname"];
     NSArray *email = [json valueForKeyPath:@"email"];
-
+    NSArray *userId = [json valueForKeyPath:@"id"];
     UserData *userData = [UserData alloc];
     [userData setName:[nome objectAtIndex:0]];
     [userData setWeightInKilograms:[[peso_atual objectAtIndex:0] intValue]];
@@ -189,6 +189,7 @@
     [userData setEmail:[email objectAtIndex:0]];
     [userData setNickName:[nick objectAtIndex:0]];
     [userData setSex:[[sexo objectAtIndex:0] boolValue]];
+    [userData setUserID:[[userId objectAtIndex:0] intValue]];
     return 1;
 
 }
