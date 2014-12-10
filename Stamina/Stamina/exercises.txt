@@ -1,0 +1,30 @@
+102300
+5
+Dica 10
+Dica 20
+Dica 30
+Dica 40
+Dica 50
+Exercicio zika1
+fr_peitoral
+costas
+102301
+5
+Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11
+Dica 11Dica 11Dica 11Dica 11
+Dica 31
+Dica 41
+Dica 51
+Exercicio zika12
+tr_antebraco
+costas
+102302
+5
+Dica 12
+Dica 22
+Dica 32
+Dica 42
+Dica 52
+Exercicio zika1r
+tr_ombros
+costas
