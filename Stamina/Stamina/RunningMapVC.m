@@ -154,7 +154,7 @@
         [[self speedLabel] setText:[NSString stringWithFormat:@"%.01f Km/h", ([newLocation speed] * 3.6)]];
     
     else {
-        [[self speedLabel] setText:[NSString stringWithFormat:@"", ([newLocation speed] * 3.6)]];
+        [[self speedLabel] setText:@""];
     }
     
     [self updateTextInDistanceLabel];
