@@ -990,7 +990,6 @@
 		FFAC193E19E3172300B17487 /* Exercitar */ = {
 			isa = PBXGroup;
 			children = (
-				FFAC194019E319DA00B17487 /* Academia */,
 				FFAC193F19E319D200B17487 /* Corrida */,
 			);
 			name = Exercitar;
@@ -1013,13 +1012,6 @@
 				FFB8BCC41A0AA17C00F9D8A7 /* RoutePicture.m */,
 			);
 			name = Corrida;
-			sourceTree = "<group>";
-		};
-		FFAC194019E319DA00B17487 /* Academia */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Academia;
 			sourceTree = "<group>";
 		};
 		FFAC194119E319F300B17487 /* Cadastro */ = {

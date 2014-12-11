@@ -7,12 +7,14 @@
 //
 
 #import "HideBBVC.h"
+#import "WeatherCondition.h"
 
 @interface AcademiaVC : HideBBVC 
 @property UIView *tabBar;
 @property CGPoint point;
 @property CGPoint startPointBar;
-@property (weak, nonatomic) IBOutlet UIImageView *iconCalendar;
+@property (weak, nonatomic) IBOutlet UIImageView *temperatureImage;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btnCalendar;
