@@ -32,7 +32,6 @@
 		C561EBEA1A38FA3C002F3F6A /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C561EBE91A38FA3C002F3F6A /* UserData.m */; };
 		C5968D981A225EB400092176 /* Traning.m in Sources */ = {isa = PBXBuildFile; fileRef = C5968D971A225EB400092176 /* Traning.m */; };
 		C5B62BED1A14056000F969D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BEC1A14056000F969D8 /* Main.storyboard */; };
-		C5B62C091A1525F400F969D8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF71A15236200F969D8 /* Lato-Black.ttf */; };
 		C5B62C0A1A1525F400F969D8 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF81A15236200F969D8 /* Lato-BlackItalic.ttf */; };
 		C5B62C0B1A1525F400F969D8 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF91A15236200F969D8 /* Lato-Bold.ttf */; };
 		C5B62C0C1A1525F400F969D8 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BFA1A15236200F969D8 /* Lato-BoldItalic.ttf */; };
@@ -158,9 +157,7 @@
 		FF1D8DBD1A38AA3F00E52110 /* Icone_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DBB1A38AA3F00E52110 /* Icone_facebook.png */; };
 		FF1D8DBE1A38AA3F00E52110 /* icone_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DBC1A38AA3F00E52110 /* icone_instagram.png */; };
 		FF1D8DC61A38AA7200E52110 /* icone_alternar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC01A38AA7200E52110 /* icone_alternar.png */; };
-		FF1D8DC71A38AA7200E52110 /* icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC11A38AA7200E52110 /* icone_serie.png */; };
 		FF1D8DC91A38AA7200E52110 /* s_icone_alternar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC31A38AA7200E52110 /* s_icone_alternar.png */; };
-		FF1D8DCA1A38AA7200E52110 /* s_icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC41A38AA7200E52110 /* s_icone_serie.png */; };
 		FF1D8DCB1A38AA7200E52110 /* s_icone_tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC51A38AA7200E52110 /* s_icone_tempo.png */; };
 		FF1D8DD71A38AAE100E52110 /* icone_adicionar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DCD1A38AAE100E52110 /* icone_adicionar_tab.png */; };
 		FF1D8DD81A38AAE100E52110 /* icone_cancelar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DCE1A38AAE100E52110 /* icone_cancelar_tab.png */; };
@@ -1101,8 +1098,6 @@
 				FF1D8DDC1A38AAE100E52110 /* icone_ideia_tab.png in Resources */,
 				FF1D8D9A1A38A9B900E52110 /* s_icone_add_trajeto.png in Resources */,
 				C5B62C591A1527F600F969D8 /* icone_calendario_31.png in Resources */,
-				FF1D8DCA1A38AA7200E52110 /* s_icone_serie.png in Resources */,
-				C5B62C091A1525F400F969D8 /* Lato-Black.ttf in Resources */,
 				FF1D8DBD1A38AA3F00E52110 /* Icone_facebook.png in Resources */,
 				C561EBE31A38F959002F3F6A /* Default@2x.png in Resources */,
 				C5D4DA821A34D92700FE2182 /* exercises.txt in Resources */,
@@ -1192,7 +1187,6 @@
 				C5B62C3B1A1527F600F969D8 /* icone_calendario_01.png in Resources */,
 				C5B62C521A1527F600F969D8 /* icone_calendario_24.png in Resources */,
 				FF1D8D981A38A9B900E52110 /* icone_foto.png in Resources */,
-				FF1D8DC71A38AA7200E52110 /* icone_serie.png in Resources */,
 				C5B62C481A1527F600F969D8 /* icone_calendario_14.png in Resources */,
 				C5B62C561A1527F600F969D8 /* icone_calendario_28.png in Resources */,
 				FF1D8DCB1A38AA7200E52110 /* s_icone_tempo.png in Resources */,
