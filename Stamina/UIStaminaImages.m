@@ -28,7 +28,7 @@
 +(UIImage *)staminaIconCalendarTabDay{
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
     NSInteger day = [components day];
-    NSString *str = [NSString stringWithFormat:@"icone_calendario_tab_%02ld.png",(long)day];
+    NSString *str = [NSString stringWithFormat:@"icone_calendario_tab_06.png"];
     return [UIImage imageNamed:str];
     
 }
@@ -68,7 +68,7 @@
     
 }
 +(UIImage *)staminaIconSerieSel{
-    return [UIImage imageNamed:@"icone_serie_selected.png"];
+    return [UIImage imageNamed:@"s_icone_serie.png"];
     
 }
 +(UIImage *)staminaIconTime{
@@ -76,7 +76,7 @@
     
 }
 +(UIImage *)staminaIconTimeSelected{
-    return [UIImage imageNamed:@"icone_tempo_selected.png"];
+    return [UIImage imageNamed:@"s_icone_tempo.png"];
     
 }
 

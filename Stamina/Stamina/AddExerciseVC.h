@@ -10,6 +10,7 @@
 #import "Exercises.h"
 #import "CreateTrainTemp.h"
 #import "ExerciseTemporary.h"
+#import "TipsVC.h"
 @interface AddExerciseVC : HideBBVC
 typedef enum selected
 {

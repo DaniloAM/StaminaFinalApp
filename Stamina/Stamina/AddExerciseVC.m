@@ -107,7 +107,6 @@
     NSDictionary* keyboardInfo = [notification userInfo];
     NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
     CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
-    NSLog(@"pro %f", self.view.frame.origin.y);
     [self moveView:self.view withPoint:CGPointMake(0, -keyboardFrameBeginRect.size.height) withDuration:0.3];
 }
 -(void)keyboardWillHide:(NSNotification*)notification{
@@ -150,10 +149,13 @@
     [self.navigationController.navigationBar setTranslucent:NO];
     CreateTrainTemp *temp = [CreateTrainTemp alloc];
     [temp setArrayOfExercises:nil];
+    [temp setExercise:Nil];
     [self popToRoot];
 }
 -(void)explain{
-    
+    TipsVC *temp = (TipsVC *)[self returnViewWithName:@"TipsVC"];
+    [temp setExercise:_exeCurrent];
+    [self callView:temp];
 }
 -(void)addExercise{
     ExerciseTemporary *new = [[ExerciseTemporary alloc] init];

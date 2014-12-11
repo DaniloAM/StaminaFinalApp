@@ -19,7 +19,7 @@
 
     [self firstButtonMethod:@selector(function1) fromClass:self withImage:[UIImage staminaIconHome]];
     [self secondButtonMethod:@selector(function2) fromClass:self  withImage:[UIImage staminaIconPlus]];
-    [self thirdButtonMethod:@selector(function3) fromClass:self  withImage:[UIImage staminaIconCancel]];
+    [self thirdButtonMethod:@selector(function3) fromClass:self  withImage:[UIImage staminaIconTrophy]];
     [self showBarWithAnimation:1];
     }
 -(void)function1{

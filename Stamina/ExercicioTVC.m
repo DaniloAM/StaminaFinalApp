@@ -72,7 +72,7 @@
     self.table.dataSource=self;
     [self firstButtonMethod:@selector(firstButton) fromClass:self withImage:[UIImage staminaIconHome]];
     [self secondButtonMethod:@selector(secondButton) fromClass:self withImage:[UIImage staminaIconPlus]];
-
+    [self thirdButtonMethod:@selector(thirdButton) fromClass:self withImage:[UIImage staminaIconCancel]];
 
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -84,7 +84,9 @@
         return [[self arrayOfExercises] count]+2;
     return [[self arrayOfExercises] count];
 }
-
+-(void)thirdButton{
+         [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:3] animated:YES];   
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
