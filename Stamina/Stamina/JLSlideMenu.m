@@ -111,7 +111,9 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height-3, self.navigationController.navigationBar.frame.size.width,5)];
     [view setBackgroundColor:[UIColor staminaYellowColor]];
     [self.navigationController.navigationBar addSubview:view];
-    
+    UIView *statusBar = [[UIView alloc] initWithFrame:CGRectMake(0, -100, screenSize.width, 100)];
+    [statusBar setBackgroundColor:[UIColor staminaYellowColor]];
+    [self.navigationController.navigationBar addSubview:statusBar];
 }
 //end initializing methods
 //start gesture recognizers
