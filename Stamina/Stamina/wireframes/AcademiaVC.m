@@ -50,8 +50,8 @@
     [[self btnCalendar] setBackgroundImage:[UIImage staminaIconCalendarDay] forState:UIControlStateNormal];
     [self btn1].backgroundColor = [UIColor staminaBlackColor];
     [self btn2].backgroundColor = [UIColor staminaBlackColor];
-    [[self btn1].titleLabel setFont:[UIFont fontWithName:@"Lato" size:22.0]];
-    [[self btn2].titleLabel setFont:[UIFont fontWithName:@"Lato" size:22.0]];
+    [[self btn1].titleLabel setFont:[UIFont fontWithName:@"Lato-Semibold" size:22.0]];
+    [[self btn2].titleLabel setFont:[UIFont fontWithName:@"Lato-Semibold" size:22.0]];
     [[self btn1].titleLabel setTextColor:[UIColor staminaYellowColor]];
     [[self btn2].titleLabel setTextColor:[UIColor staminaYellowColor]];
 }
