@@ -71,13 +71,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1aI-4O-OyG">
-                                <rect key="frame" x="46" y="267" width="228" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="fb_sign.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1dD-xZ-5sw">
                                 <rect key="frame" x="45" y="441" width="228" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,7 +149,6 @@
                     <connections>
                         <outlet property="activity" destination="cx9-nj-BAz" id="JXN-qY-HUP"/>
                         <outlet property="errorLbl" destination="4E6-Z4-YhK" id="r6k-pw-6AU"/>
-                        <outlet property="fbBTN" destination="1aI-4O-OyG" id="fyz-z5-4Fu"/>
                         <outlet property="login" destination="nyG-T4-AVz" id="aFn-p2-xIW"/>
                         <outlet property="logo" destination="CNY-vg-X6n" id="wuC-m0-Dga"/>
                         <outlet property="password" destination="wYs-iD-VOm" id="RFD-ea-XIb"/>
@@ -1378,7 +1370,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fb_sign.png" width="454" height="71"/>
         <image name="icoen_tempo.png" width="116" height="116"/>
         <image name="icone_bpm.png" width="116" height="116"/>
         <image name="icone_calendario_01.png" width="301" height="322"/>
