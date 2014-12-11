@@ -17,20 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self changeBarNameWith:@"Stamina"];
+    [self showBarWithAnimation:1];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
-    NSInteger day = [components day];
     UserData *user = [UserData alloc];
     [[self nickName] setText:[user nickName]];
-    NSString *str = [NSString stringWithFormat:@"icone_calendario_%02ld.png",(long)day];
-    [self firstButtonMethod:nil  fromClass:self  withImage:[UIImage imageNamed:@"icone_compartilhar_tab.png"]];
-    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
-    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_pontuacao_tab.png"]];
+    [self firstButtonMethod:@selector(function1)  fromClass:self  withImage:[UIImage staminaIconShare]];
+    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage staminaIconCalendarTabDay]];
+    [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage staminaIconTrophy]];
     self.navigationItem.hidesBackButton = YES;
     [self addToButton:_academiaBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_academia.png"] andNormal:[UIImage imageNamed:@"icone_academia.png"]];
     [self addToButton:_runningBtn imageWhenPressed:[UIImage imageNamed:@"s_icone_caminhada.png"] andNormal:[UIImage imageNamed:@"icone_caminhada.png"]];
+}
+-(void)function1{
+    [self callViewWithName:@"shareScreen"];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];

@@ -17,9 +17,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
 
-    [self firstButtonMethod:@selector(function1) fromClass:self withImage:[UIImage imageNamed:@"icon_home.png"]];
-    [self secondButtonMethod:@selector(function2) fromClass:self  withImage:[UIImage imageNamed:@"icon_adicionar.png"]];
-    [self thirdButtonMethod:@selector(function3) fromClass:self  withImage:[UIImage imageNamed:@"icon_editar.png"]];
+    [self firstButtonMethod:@selector(function1) fromClass:self withImage:[UIImage staminaIconHome]];
+    [self secondButtonMethod:@selector(function2) fromClass:self  withImage:[UIImage staminaIconPlus]];
+    [self thirdButtonMethod:@selector(function3) fromClass:self  withImage:[UIImage staminaIconCancel]];
     [self showBarWithAnimation:1];
     }
 -(void)function1{
@@ -41,11 +41,9 @@
 }
 -(void)viewDidLoad{
     [super viewDidLoad];
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
-    NSInteger day = [components day];
-    NSString *str = [NSString stringWithFormat:@"icone_calendario_%02d.png", (int)day];
+ 
     [self.navigationItem setTitle:@"Academia"];
-    [[self btnCalendar] setBackgroundImage:[UIImage imageNamed:str] forState:UIControlStateNormal];
+    [[self btnCalendar] setBackgroundImage:[UIImage staminaIconCalendarDay] forState:UIControlStateNormal];
     [self btn1].backgroundColor = [UIColor staminaBlackColor];
     [self btn2].backgroundColor = [UIColor staminaBlackColor];
     [[self btn1].titleLabel setFont:[UIFont fontWithName:@"Lato" size:22.0]];

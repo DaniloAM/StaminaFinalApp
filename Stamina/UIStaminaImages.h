@@ -25,5 +25,6 @@
 +(UIImage *)staminaIconSerieSel;
 +(UIImage *)staminaIconTime;
 +(UIImage *)staminaIconTimeSelected;
-
++(UIImage *)staminaIconCalendarTabDay;
++(UIImage *)staminaIconCalendarDay;
 @end

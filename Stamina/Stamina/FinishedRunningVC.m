@@ -41,11 +41,11 @@
     
     
     //Set bar button actions and images
-    [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+    [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage staminaIconHome]];
     
     [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
     
-    [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
+    [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage staminaIconTrophy]];
     
 
     
@@ -182,7 +182,7 @@
     [[self leftButton] setHidden:true];
     [[self rightButton] setHidden:true];
     
-    [self thirdButtonMethod:@selector(confirmRouteName) fromClass:self  withImage:[UIImage imageNamed: @"icone_ok_tab.png"]];
+    [self thirdButtonMethod:@selector(confirmRouteName) fromClass:self  withImage:[UIImage staminaIconOk]];
 }
 
 
@@ -198,7 +198,7 @@
         [self setSaveRoute:false];
     }
     
-    [self thirdButtonMethod:@selector(goToRankingPoints) fromClass:self  withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
+    [self thirdButtonMethod:@selector(goToRankingPoints) fromClass:self  withImage:[UIImage staminaIconTrophy]];
     
 }
 
@@ -227,11 +227,11 @@
         
         _state = 0;
         
-        [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+        [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage staminaIconHome]];
         
         [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
         
-        [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage imageNamed: @"icone_pontuacao_tab.png"]];
+        [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage staminaIconTrophy]];
        
         [self setButtonImageNameLeft:@"icone_add_trajeto.png" andRight:@"icone_compartilhar_trajeto.png"];
         

@@ -25,6 +25,19 @@
     return [UIImage imageNamed:@"icone_compartilhar_tab.png"];
 
 }
++(UIImage *)staminaIconCalendarTabDay{
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    NSInteger day = [components day];
+    NSString *str = [NSString stringWithFormat:@"icone_calendario_tab_%02ld.png",(long)day];
+    return [UIImage imageNamed:str];
+    
+}
++(UIImage *)staminaIconCalendarDay{
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    NSInteger day = [components day];
+    NSString *str = [NSString stringWithFormat:@"icone_calendario_%02ld.png",(long)day];
+    return [UIImage imageNamed:str];
+}
 +(UIImage *)staminaIconEdit{
     return [UIImage imageNamed:@"icone_editar_tab.png"];
 

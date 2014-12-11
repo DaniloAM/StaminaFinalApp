@@ -304,9 +304,9 @@
     [self hideBarWithAnimation:1];
     
     [super viewWillAppear:animated];
-    [self firstButtonMethod:@selector(function1)  fromClass:self withImage:[UIImage imageNamed:@"icone_ok_tab.png"]];
-    [self secondButtonMethod:@selector(function2) fromClass:self  withImage:[UIImage imageNamed:@"icon_adicionar.png"]];
-    [self thirdButtonMethod:@selector(function3) fromClass:self withImage:[UIImage imageNamed:@"icone_adicionar_tab.png"]];
+    [self firstButtonMethod:@selector(function1)  fromClass:self withImage:[UIImage staminaIconOk]];
+    [self secondButtonMethod:@selector(function2) fromClass:self  withImage:[UIImage staminaIconPlus]];
+    [self thirdButtonMethod:@selector(function3) fromClass:self withImage:[UIImage staminaIconCancel]];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];

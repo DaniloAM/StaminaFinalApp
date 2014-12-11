@@ -70,8 +70,8 @@
     [super viewWillAppear:animated];
     self.table.delegate = self;
     self.table.dataSource=self;
-    [self firstButtonMethod:@selector(firstButton) fromClass:self withImage:[UIImage imageNamed:@"icon_home.png"]];
-    [self secondButtonMethod:@selector(secondButton) fromClass:self withImage:[UIImage imageNamed:@"icone_adicionar_tab.png"]];
+    [self firstButtonMethod:@selector(firstButton) fromClass:self withImage:[UIImage staminaIconHome]];
+    [self secondButtonMethod:@selector(secondButton) fromClass:self withImage:[UIImage staminaIconPlus]];
 
 
 }
