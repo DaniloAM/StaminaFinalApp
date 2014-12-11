@@ -26,8 +26,8 @@
 
 }
 +(UIImage *)staminaIconCalendarTabDay{
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
-    NSInteger day = [components day];
+    //NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    //NSInteger day = [components day];
     NSString *str = [NSString stringWithFormat:@"icone_calendario_tab_06.png"];
     return [UIImage imageNamed:str];
     

@@ -285,7 +285,7 @@
     
     switch (x) {
         case 0:
-            return [NSString stringWithFormat:@"  Lembrete                                         %02dh:%02ldm", [user timeAlarmBeforeTraining]/60,(long)[user timeAlarmBeforeTraining]%60];
+            return [NSString stringWithFormat:@"  Lembrete                                         %02dh:%02ldm", (int)[user timeAlarmBeforeTraining]/60,(long)[user timeAlarmBeforeTraining]%60];
         case 1:
             return @"  Idioma";
         case 2:

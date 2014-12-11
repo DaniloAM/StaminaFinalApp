@@ -28,7 +28,6 @@
 		C561EBE21A38F959002F3F6A /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C561EBE01A38F959002F3F6A /* Splash.png */; };
 		C561EBE31A38F959002F3F6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C561EBE11A38F959002F3F6A /* Default@2x.png */; };
 		C561EBE51A38F96A002F3F6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C561EBE41A38F96A002F3F6A /* Images.xcassets */; };
-		C561EBE71A38F980002F3F6A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C561EBE61A38F980002F3F6A /* Info.plist */; };
 		C561EBEA1A38FA3C002F3F6A /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C561EBE91A38FA3C002F3F6A /* UserData.m */; };
 		C5968D981A225EB400092176 /* Traning.m in Sources */ = {isa = PBXBuildFile; fileRef = C5968D971A225EB400092176 /* Traning.m */; };
 		C5B62BED1A14056000F969D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BEC1A14056000F969D8 /* Main.storyboard */; };
@@ -82,8 +81,6 @@
 		C5B62C581A1527F600F969D8 /* icone_calendario_30.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B62C391A1527F600F969D8 /* icone_calendario_30.png */; };
 		C5B62C591A1527F600F969D8 /* icone_calendario_31.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B62C3A1A1527F600F969D8 /* icone_calendario_31.png */; };
 		C5CDB83F1A3989830061B12A /* icone_tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5CDB83D1A3989830061B12A /* icone_tempo.png */; };
-		C5CDB8431A3989C20061B12A /* icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = C5CDB8411A3989C20061B12A /* icone_serie.png */; };
-		C5CDB8441A3989C20061B12A /* s_icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = C5CDB8421A3989C20061B12A /* s_icone_serie.png */; };
 		C5D4DA801A34D91A00FE2182 /* ReadTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4DA7F1A34D91A00FE2182 /* ReadTXT.m */; };
 		C5D4DA821A34D92700FE2182 /* exercises.txt in Resources */ = {isa = PBXBuildFile; fileRef = C5D4DA811A34D92700FE2182 /* exercises.txt */; };
 		C5D4DA861A34DA3E00FE2182 /* ExerciseTip.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D4DA851A34DA3E00FE2182 /* ExerciseTip.m */; };
@@ -100,7 +97,6 @@
 		C5EB6C0919D9DBD300C528FC /* FBLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EB6BFF19D9DBD300C528FC /* FBLoginVC.m */; };
 		C5EB6C0A19D9DBD300C528FC /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EB6C0119D9DBD300C528FC /* AVCamPreviewView.m */; };
 		C5EB6C0D19D9DBD300C528FC /* RunningMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EB6C0719D9DBD300C528FC /* RunningMapVC.m */; };
-		C5EB6C1119D9DD5D00C528FC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EB6C1019D9DD5D00C528FC /* MapKit.framework */; };
 		C5EBA8041A1D283C0033076C /* TrainingExercises.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA8031A1D283C0033076C /* TrainingExercises.m */; };
 		C5F446D61A07DEA5005031C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F446D51A07DEA5005031C2 /* SystemConfiguration.framework */; };
 		FF13E9D719E5BE160005BA49 /* RoutePointsCartesian.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13E9D619E5BE160005BA49 /* RoutePointsCartesian.m */; };
@@ -110,7 +106,6 @@
 		FF1596F019C0CBC900D9236F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1596EF19C0CBC900D9236F /* main.m */; };
 		FF1596F319C0CBC900D9236F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1596F219C0CBC900D9236F /* AppDelegate.m */; };
 		FF1596F619C0CBC900D9236F /* Stamina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1596F419C0CBC900D9236F /* Stamina.xcdatamodeld */; };
-		FF15998519C0E32200D9236F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF15987519C0E32100D9236F /* FacebookSDK.framework */; };
 		FF159A4C19C21D1B00D9236F /* CoreDataLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = FF159A4B19C21D1B00D9236F /* CoreDataLoading.m */; };
 		FF159A5219C22BD400D9236F /* ExercisesList.m in Sources */ = {isa = PBXBuildFile; fileRef = FF159A5119C22BD400D9236F /* ExercisesList.m */; };
 		FF17BDBA19C9F78F00B5EF46 /* TrainingDayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF17BDB919C9F78F00B5EF46 /* TrainingDayObject.m */; };
@@ -158,9 +153,7 @@
 		FF1D8DBD1A38AA3F00E52110 /* Icone_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DBB1A38AA3F00E52110 /* Icone_facebook.png */; };
 		FF1D8DBE1A38AA3F00E52110 /* icone_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DBC1A38AA3F00E52110 /* icone_instagram.png */; };
 		FF1D8DC61A38AA7200E52110 /* icone_alternar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC01A38AA7200E52110 /* icone_alternar.png */; };
-		FF1D8DC71A38AA7200E52110 /* icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC11A38AA7200E52110 /* icone_serie.png */; };
 		FF1D8DC91A38AA7200E52110 /* s_icone_alternar.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC31A38AA7200E52110 /* s_icone_alternar.png */; };
-		FF1D8DCA1A38AA7200E52110 /* s_icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC41A38AA7200E52110 /* s_icone_serie.png */; };
 		FF1D8DCB1A38AA7200E52110 /* s_icone_tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DC51A38AA7200E52110 /* s_icone_tempo.png */; };
 		FF1D8DD71A38AAE100E52110 /* icone_adicionar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DCD1A38AAE100E52110 /* icone_adicionar_tab.png */; };
 		FF1D8DD81A38AAE100E52110 /* icone_cancelar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DCE1A38AAE100E52110 /* icone_cancelar_tab.png */; };
@@ -175,6 +168,10 @@
 		FF1D8DE31A38AC1700E52110 /* UIStaminaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */; };
 		FF5911331A38CC4E004208FA /* stamina_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911321A38CC4E004208FA /* stamina_logo.png */; };
 		FF5911361A38DE4F004208FA /* icone_calendario_tab_06.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */; };
+		FF5911381A39BA5B004208FA /* icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911371A39BA5B004208FA /* icone_serie.png */; };
+		FF59113A1A39BA6D004208FA /* s_icone_serie.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911391A39BA6D004208FA /* s_icone_serie.png */; };
+		FF59113E1A39BD35004208FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EB6C1019D9DD5D00C528FC /* MapKit.framework */; };
+		FF59113F1A39BD58004208FA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF15987519C0E32100D9236F /* FacebookSDK.framework */; };
 		FF951BDD1A28E52A00E581AB /* GNComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD61A28E52A00E581AB /* GNComponent.m */; };
 		FF951BDE1A28E52A00E581AB /* GraphicScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD81A28E52A00E581AB /* GraphicScroller.m */; };
 		FF951BDF1A28E52A00E581AB /* GraphUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BDA1A28E52A00E581AB /* GraphUpdater.m */; };
@@ -335,7 +332,7 @@
 		FF1596F519C0CBC900D9236F /* Stamina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stamina.xcdatamodel; sourceTree = "<group>"; };
 		FF15970819C0CBC900D9236F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF15970919C0CBC900D9236F /* StaminaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaminaTests.m; sourceTree = "<group>"; };
-		FF15987519C0E32100D9236F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		FF15987519C0E32100D9236F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		FF159A4A19C21D1B00D9236F /* CoreDataLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataLoading.h; sourceTree = "<group>"; };
 		FF159A4B19C21D1B00D9236F /* CoreDataLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataLoading.m; sourceTree = "<group>"; };
 		FF159A5019C22BD400D9236F /* ExercisesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesList.h; sourceTree = "<group>"; };
@@ -397,9 +394,7 @@
 		FF1D8DBB1A38AA3F00E52110 /* Icone_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icone_facebook.png; sourceTree = "<group>"; };
 		FF1D8DBC1A38AA3F00E52110 /* icone_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_instagram.png; sourceTree = "<group>"; };
 		FF1D8DC01A38AA7200E52110 /* icone_alternar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_alternar.png; sourceTree = "<group>"; };
-		FF1D8DC11A38AA7200E52110 /* icone_serie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_serie.png; sourceTree = "<group>"; };
 		FF1D8DC31A38AA7200E52110 /* s_icone_alternar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s_icone_alternar.png; sourceTree = "<group>"; };
-		FF1D8DC41A38AA7200E52110 /* s_icone_serie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s_icone_serie.png; sourceTree = "<group>"; };
 		FF1D8DC51A38AA7200E52110 /* s_icone_tempo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s_icone_tempo.png; sourceTree = "<group>"; };
 		FF1D8DCD1A38AAE100E52110 /* icone_adicionar_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_adicionar_tab.png; sourceTree = "<group>"; };
 		FF1D8DCE1A38AAE100E52110 /* icone_cancelar_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_cancelar_tab.png; sourceTree = "<group>"; };
@@ -415,6 +410,9 @@
 		FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStaminaButton.m; sourceTree = "<group>"; };
 		FF5911321A38CC4E004208FA /* stamina_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamina_logo.png; sourceTree = "<group>"; };
 		FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_calendario_tab_06.png; sourceTree = "<group>"; };
+		FF5911371A39BA5B004208FA /* icone_serie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_serie.png; sourceTree = "<group>"; };
+		FF5911391A39BA6D004208FA /* s_icone_serie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s_icone_serie.png; sourceTree = "<group>"; };
+		FF59113B1A39BD26004208FA /* Stamina.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Stamina.xcodeproj; sourceTree = "<group>"; };
 		FF951BD51A28E52A00E581AB /* GNComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNComponent.h; sourceTree = "<group>"; };
 		FF951BD61A28E52A00E581AB /* GNComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNComponent.m; sourceTree = "<group>"; };
 		FF951BD71A28E52A00E581AB /* GraphicScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicScroller.h; sourceTree = "<group>"; };
@@ -443,10 +441,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF59113F1A39BD58004208FA /* FacebookSDK.framework in Frameworks */,
+				FF59113E1A39BD35004208FA /* MapKit.framework in Frameworks */,
 				C5F446D61A07DEA5005031C2 /* SystemConfiguration.framework in Frameworks */,
 				FFF51A5219E48066000BED6B /* Social.framework in Frameworks */,
-				C5EB6C1119D9DD5D00C528FC /* MapKit.framework in Frameworks */,
-				FF15998519C0E32200D9236F /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,20 +715,13 @@
 		FF15987319C0E2F000D9236F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF59113B1A39BD26004208FA /* Stamina.xcodeproj */,
 				C5F446D51A07DEA5005031C2 /* SystemConfiguration.framework */,
 				FFF51A5119E48066000BED6B /* Social.framework */,
 				C5EB6C1019D9DD5D00C528FC /* MapKit.framework */,
-				FF15987419C0E32100D9236F /* FacebookSDK */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF15987419C0E32100D9236F /* FacebookSDK */ = {
-			isa = PBXGroup;
-			children = (
 				FF15987519C0E32100D9236F /* FacebookSDK.framework */,
 			);
-			path = FacebookSDK;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FF1D8D491A36003100E52110 /* Compartilhar */ = {
@@ -912,13 +903,13 @@
 		FF1D8DBF1A38AA6200E52110 /* Academia */ = {
 			isa = PBXGroup;
 			children = (
+				FF5911391A39BA6D004208FA /* s_icone_serie.png */,
+				FF5911371A39BA5B004208FA /* icone_serie.png */,
 				C5CDB8411A3989C20061B12A /* icone_serie.png */,
 				C5CDB8421A3989C20061B12A /* s_icone_serie.png */,
 				FF1D8DC01A38AA7200E52110 /* icone_alternar.png */,
-				FF1D8DC11A38AA7200E52110 /* icone_serie.png */,
 				C5CDB83D1A3989830061B12A /* icone_tempo.png */,
 				FF1D8DC31A38AA7200E52110 /* s_icone_alternar.png */,
-				FF1D8DC41A38AA7200E52110 /* s_icone_serie.png */,
 				FF1D8DC51A38AA7200E52110 /* s_icone_tempo.png */,
 			);
 			name = Academia;
@@ -948,6 +939,11 @@
 				FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */,
 			);
 			name = CalendarTabbar;
+			sourceTree = "<group>";
+		};
+		FF59113C1A39BD26004208FA /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FF794D7819CA28BA00808144 /* CoreData */ = {
@@ -1081,6 +1077,12 @@
 			mainGroup = FF1596E119C0CBC900D9236F;
 			productRefGroup = FF1596EB19C0CBC900D9236F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF59113C1A39BD26004208FA /* Products */;
+					ProjectRef = FF59113B1A39BD26004208FA /* Stamina.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF1596E919C0CBC900D9236F /* Stamina */,
@@ -1100,8 +1102,8 @@
 				FF1D8DDF1A38AAE100E52110 /* icone_pontuacao_tab.png in Resources */,
 				FF1D8DDC1A38AAE100E52110 /* icone_ideia_tab.png in Resources */,
 				FF1D8D9A1A38A9B900E52110 /* s_icone_add_trajeto.png in Resources */,
+				FF5911381A39BA5B004208FA /* icone_serie.png in Resources */,
 				C5B62C591A1527F600F969D8 /* icone_calendario_31.png in Resources */,
-				FF1D8DCA1A38AA7200E52110 /* s_icone_serie.png in Resources */,
 				C5B62C091A1525F400F969D8 /* Lato-Black.ttf in Resources */,
 				FF1D8DBD1A38AA3F00E52110 /* Icone_facebook.png in Resources */,
 				C561EBE31A38F959002F3F6A /* Default@2x.png in Resources */,
@@ -1117,6 +1119,7 @@
 				C5B62C0C1A1525F400F969D8 /* Lato-BoldItalic.ttf in Resources */,
 				FF1D8DE01A38AAE100E52110 /* icone_voltar_tab.png in Resources */,
 				FF1D8DD91A38AAE100E52110 /* icone_compartilhar_tab.png in Resources */,
+				FF59113A1A39BA6D004208FA /* s_icone_serie.png in Resources */,
 				FF1D8DAF1A38A9FC00E52110 /* icone_velocimetro.png in Resources */,
 				FF1D8D9B1A38A9B900E52110 /* s_icone_compartilhar_trajeto.png in Resources */,
 				C5DB392F1A28D7400066E1BC /* icone_hamburguer.png in Resources */,
@@ -1181,18 +1184,15 @@
 				C5B62C571A1527F600F969D8 /* icone_calendario_29.png in Resources */,
 				C5B62C4F1A1527F600F969D8 /* icone_calendario_21.png in Resources */,
 				C5B62BED1A14056000F969D8 /* Main.storyboard in Resources */,
-				C561EBE71A38F980002F3F6A /* Info.plist in Resources */,
 				FF1D8DD71A38AAE100E52110 /* icone_adicionar_tab.png in Resources */,
 				C5B62C441A1527F600F969D8 /* icone_calendario_10.png in Resources */,
 				C5B62C461A1527F600F969D8 /* icone_calendario_12.png in Resources */,
 				C5B62C3C1A1527F600F969D8 /* icone_calendario_02.png in Resources */,
 				C5B62C4B1A1527F600F969D8 /* icone_calendario_17.png in Resources */,
-				C5CDB8431A3989C20061B12A /* icone_serie.png in Resources */,
 				FF1D8D801A38A89E00E52110 /* exercicio_teste2.png in Resources */,
 				C5B62C3B1A1527F600F969D8 /* icone_calendario_01.png in Resources */,
 				C5B62C521A1527F600F969D8 /* icone_calendario_24.png in Resources */,
 				FF1D8D981A38A9B900E52110 /* icone_foto.png in Resources */,
-				FF1D8DC71A38AA7200E52110 /* icone_serie.png in Resources */,
 				C5B62C481A1527F600F969D8 /* icone_calendario_14.png in Resources */,
 				C5B62C561A1527F600F969D8 /* icone_calendario_28.png in Resources */,
 				FF1D8DCB1A38AA7200E52110 /* s_icone_tempo.png in Resources */,
@@ -1200,7 +1200,6 @@
 				FF1D8DAE1A38A9FC00E52110 /* icone_usuario.png in Resources */,
 				C5B62C531A1527F600F969D8 /* icone_calendario_25.png in Resources */,
 				C5B62C491A1527F600F969D8 /* icone_calendario_15.png in Resources */,
-				C5CDB8441A3989C20061B12A /* s_icone_serie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1370,7 +1369,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDK",
-					"$(PROJECT_DIR)/FacebookSDK/FBAudienceNetwork",
 				);
 				INFOPLIST_FILE = Stamina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1390,7 +1388,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDK",
-					"$(PROJECT_DIR)/FacebookSDK/FBAudienceNetwork",
 				);
 				INFOPLIST_FILE = Stamina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
