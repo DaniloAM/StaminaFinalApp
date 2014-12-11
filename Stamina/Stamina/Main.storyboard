@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="h6A-wv-HXR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="h6A-wv-HXR">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Lato-Light.ttf">
             <string>Lato-Light</string>
         </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
@@ -70,13 +71,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1aI-4O-OyG">
-                                <rect key="frame" x="46" y="267" width="228" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="fb_sign.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1dD-xZ-5sw">
                                 <rect key="frame" x="45" y="441" width="228" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,7 +149,6 @@
                     <connections>
                         <outlet property="activity" destination="cx9-nj-BAz" id="JXN-qY-HUP"/>
                         <outlet property="errorLbl" destination="4E6-Z4-YhK" id="r6k-pw-6AU"/>
-                        <outlet property="fbBTN" destination="1aI-4O-OyG" id="fyz-z5-4Fu"/>
                         <outlet property="login" destination="nyG-T4-AVz" id="aFn-p2-xIW"/>
                         <outlet property="logo" destination="CNY-vg-X6n" id="wuC-m0-Dga"/>
                         <outlet property="password" destination="wYs-iD-VOm" id="RFD-ea-XIb"/>
@@ -320,7 +313,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q3J-yu-RCi">
-                                <rect key="frame" x="60" y="89" width="84" height="90"/>
+                                <rect key="frame" x="118" y="89" width="84" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="icone_calendario_01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -407,7 +400,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lV8-Gp-hWW">
             <objects>
-                <navigationController id="8GH-Ax-KlD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="slideMenuNavigation" id="8GH-Ax-KlD" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ENP-2x-u90"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="RmX-Jh-pyd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -536,7 +529,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZO-N7-Ccn">
-                                <rect key="frame" x="41" y="261" width="250" height="40"/>
+                                <rect key="frame" x="32" y="245" width="256" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Iniciar">
                                     <color key="titleColor" red="0.97647058819999999" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -544,7 +537,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9OK-eS-tvM">
-                                <rect key="frame" x="41" y="333" width="250" height="40"/>
+                                <rect key="frame" x="32" y="317" width="256" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Treino Livre">
                                     <color key="titleColor" red="0.97647058819999999" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -555,7 +548,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="45Q-Ba-GT7">
-                                <rect key="frame" x="104" y="72" width="113" height="119"/>
+                                <rect key="frame" x="118" y="89" width="84" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -564,6 +557,17 @@
                                     <action selector="callCalendar" destination="G87-vY-y2C" eventType="touchUpInside" id="O26-2J-0kl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zO1-rD-Icw">
+                                <rect key="frame" x="194" y="117" width="73" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Rui-73-skH">
+                                <rect key="frame" x="165" y="118" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -572,6 +576,8 @@
                         <outlet property="btn1" destination="cZO-N7-Ccn" id="X71-Jw-q7L"/>
                         <outlet property="btn2" destination="9OK-eS-tvM" id="1Ej-41-6bO"/>
                         <outlet property="btnCalendar" destination="45Q-Ba-GT7" id="y8K-K0-sxH"/>
+                        <outlet property="temperatureImage" destination="Rui-73-skH" id="Ii9-C2-3tq"/>
+                        <outlet property="temperatureLabel" destination="zO1-rD-Icw" id="6r5-VN-yXn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nue-XP-dsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,20 +840,6 @@
             </objects>
             <point key="canvasLocation" x="-67" y="-2271"/>
         </scene>
-        <!--CadastroVC-->
-        <scene sceneID="dHe-4n-nDk">
-            <objects>
-                <viewController id="H4l-De-sO5" customClass="CadastroVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dWD-xH-ryQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wKB-h8-V5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-365" y="-1637"/>
-        </scene>
         <!--Graph ResultsVC-->
         <scene sceneID="CX3-b8-t2S">
             <objects>
@@ -857,15 +849,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000 m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSv-pH-P4Q">
-                                <rect key="frame" x="127" y="359" width="124" height="50"/>
+                                <rect key="frame" x="134" y="359" width="124" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone_km.png" id="noJ-nn-9Qh">
-                                <rect key="frame" x="64" y="359" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone_km.png" id="g1O-yf-3Ct">
+                                <rect key="frame" x="82" y="361" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.84705882349999995" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -1378,7 +1370,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fb_sign.png" width="454" height="71"/>
         <image name="icoen_tempo.png" width="116" height="116"/>
         <image name="icone_bpm.png" width="116" height="116"/>
         <image name="icone_calendario_01.png" width="301" height="322"/>

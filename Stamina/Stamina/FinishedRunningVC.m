@@ -229,7 +229,7 @@
         
         [self firstButtonMethod:@selector(goHome) fromClass:self  withImage:[UIImage staminaIconHome]];
         
-        [self secondButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
+        [self secondButtonMethod:@selector(goToCalendar)  fromClass:self withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
         
         [self thirdButtonMethod:@selector(goToRankingPoints)  fromClass:self withImage:[UIImage staminaIconTrophy]];
        
@@ -248,7 +248,7 @@
 }
 
 -(void)goToCalendar {
-    [self callViewWithName:@"Calendar"];
+    [self callViewWithName:@"Calendario"];
 }
 
 -(void)goToRankingPoints {

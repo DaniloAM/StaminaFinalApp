@@ -37,12 +37,21 @@
     
     [super viewWillAppear:animated];
     
-    [self firstButtonMethod:nil  fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
-    [self secondButtonMethod:nil fromClass:self  withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
+    [self firstButtonMethod:@selector(goHome)  fromClass:self  withImage:[UIImage imageNamed:@"icone_home_tab.png"]];
+    [self secondButtonMethod:@selector(goToCalendar) fromClass:self  withImage:[UIImage imageNamed:@"icone_calendario_tab_06.png"]];
     [self thirdButtonMethod:nil  fromClass:self withImage:[UIImage imageNamed:@"icone_adicionar_tab.png"]];
     
     
     [self performSelectorInBackground:@selector(showCurrentWeather) withObject:nil];
+}
+
+
+-(void)goHome {
+    [self popToRoot];
+}
+
+-(void)goToCalendar {
+    [self callViewWithName:@"Calendario"];
 }
 
 
@@ -53,25 +62,32 @@
     NSInteger temperature = [condition returnTemperatureInCurrentLocation];
     
     if(temperature <= 0) {
+        
         CGRect frame = [[self calendarButton] frame];
         frame.origin.x = 118;
         [[self calendarButton] setFrame:frame];
         [[self temperatureLabel] setHidden:true];
         [[self temperatureImage] setHidden:true];
-        
+
     }
     
     else {
-        CGRect frame = [[self calendarButton] frame];
-        frame.origin.x = 60;
-        [[self calendarButton] setFrame:frame];
-        [[self temperatureLabel] setHidden:false];
-        [[self temperatureImage] setHidden:false];
         
         temperature -= 273;
         
-        NSString *temp = [NSString stringWithFormat:@"%d °C", (int) temperature];
-        [[self temperatureLabel] setText:temp];
+        [UIView animateWithDuration:0.3 animations:^{
+            
+            CGRect frame = [[self calendarButton] frame];
+            frame.origin.x = 60;
+            [[self calendarButton] setFrame:frame];
+            [[self temperatureLabel] setHidden:false];
+            [[self temperatureImage] setHidden:false];
+            
+            NSString *temp = [NSString stringWithFormat:@"%d °C", (int) temperature];
+            [[self temperatureLabel] setText:temp];
+            
+        }];
+        
     }
     
     //[self performSelector:@selector(showCurrentWeather) withObject:nil afterDelay:30.0];

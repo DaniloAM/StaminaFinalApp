@@ -285,7 +285,11 @@
     
     switch (x) {
         case 0:
+<<<<<<< HEAD
             return [NSString stringWithFormat:@"  Lembrete                                         %02dh:%02dm", (int)[user timeAlarmBeforeTraining]/60,(int)[user timeAlarmBeforeTraining]%60];
+=======
+            return [NSString stringWithFormat:@"  Lembrete                                         %02dh:%02ldm", (int)[user timeAlarmBeforeTraining]/60,(long)[user timeAlarmBeforeTraining]%60];
+>>>>>>> FETCH_HEAD
         case 1:
             return @"  Idioma";
         case 2:
