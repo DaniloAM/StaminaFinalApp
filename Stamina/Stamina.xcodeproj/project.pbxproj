@@ -10,10 +10,11 @@
 		324E23C219E87FC400DA2FDE /* CategoriaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E23C119E87FC400DA2FDE /* CategoriaVC.m */; };
 		325F1FDA19E7091C00001EB0 /* AcademiaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F1FD919E7091C00001EB0 /* AcademiaVC.m */; };
 		325F1FE919E7229C00001EB0 /* HideBBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F1FE819E7229C00001EB0 /* HideBBVC.m */; };
-		3276F1CD19F6CE2D00B2F93D /* CriaTreinoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3276F1CC19F6CE2D00B2F93D /* CriaTreinoVC.m */; };
 		32F57C6F19EC4D16001BF6B2 /* ExercicioTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F57C6E19EC4D16001BF6B2 /* ExercicioTVC.m */; };
 		32F57C7219EC6838001BF6B2 /* MenuShouldOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F57C7119EC6838001BF6B2 /* MenuShouldOpen.m */; };
 		32F7237E19FABCD6006170CD /* CreateTrainTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F7237D19FABCD6006170CD /* CreateTrainTemp.m */; };
+		C507251F1A396E5D007698F5 /* CriaTreinoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C507251E1A396E5D007698F5 /* CriaTreinoVC.m */; };
+		C50725221A397094007698F5 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C50725211A397094007698F5 /* CustomIOS7AlertView.m */; };
 		C52024471A26434300DDF73B /* ConfiguracoesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52024461A26434300DDF73B /* ConfiguracoesVC.m */; };
 		C52C27871A07EB690030BEA4 /* CadastroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C27861A07EB690030BEA4 /* CadastroVC.m */; };
 		C53A353119D3411F00AC1383 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C53A353019D3411F00AC1383 /* Reachability.m */; };
@@ -31,7 +32,6 @@
 		C561EBEA1A38FA3C002F3F6A /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C561EBE91A38FA3C002F3F6A /* UserData.m */; };
 		C5968D981A225EB400092176 /* Traning.m in Sources */ = {isa = PBXBuildFile; fileRef = C5968D971A225EB400092176 /* Traning.m */; };
 		C5B62BED1A14056000F969D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BEC1A14056000F969D8 /* Main.storyboard */; };
-		C5B62BF31A14111C00F969D8 /* MenuLViews.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B62BF21A14111C00F969D8 /* MenuLViews.m */; };
 		C5B62C091A1525F400F969D8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF71A15236200F969D8 /* Lato-Black.ttf */; };
 		C5B62C0A1A1525F400F969D8 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF81A15236200F969D8 /* Lato-BlackItalic.ttf */; };
 		C5B62C0B1A1525F400F969D8 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B62BF91A15236200F969D8 /* Lato-Bold.ttf */; };
@@ -171,7 +171,6 @@
 		FF1D8DDF1A38AAE100E52110 /* icone_pontuacao_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DD51A38AAE100E52110 /* icone_pontuacao_tab.png */; };
 		FF1D8DE01A38AAE100E52110 /* icone_voltar_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1D8DD61A38AAE100E52110 /* icone_voltar_tab.png */; };
 		FF1D8DE31A38AC1700E52110 /* UIStaminaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */; };
-		FF1D8DE61A38AFBD00E52110 /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */; };
 		FF5911331A38CC4E004208FA /* stamina_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911321A38CC4E004208FA /* stamina_logo.png */; };
 		FF5911361A38DE4F004208FA /* icone_calendario_tab_06.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */; };
 		FF951BDD1A28E52A00E581AB /* GNComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF951BD61A28E52A00E581AB /* GNComponent.m */; };
@@ -194,14 +193,16 @@
 		325F1FD919E7091C00001EB0 /* AcademiaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcademiaVC.m; path = wireframes/AcademiaVC.m; sourceTree = "<group>"; };
 		325F1FE719E7229C00001EB0 /* HideBBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideBBVC.h; sourceTree = "<group>"; };
 		325F1FE819E7229C00001EB0 /* HideBBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideBBVC.m; sourceTree = "<group>"; };
-		3276F1CB19F6CE2D00B2F93D /* CriaTreinoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriaTreinoVC.h; sourceTree = "<group>"; };
-		3276F1CC19F6CE2D00B2F93D /* CriaTreinoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriaTreinoVC.m; sourceTree = "<group>"; };
 		32F57C6D19EC4D16001BF6B2 /* ExercicioTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercicioTVC.h; path = ../ExercicioTVC.h; sourceTree = "<group>"; };
 		32F57C6E19EC4D16001BF6B2 /* ExercicioTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercicioTVC.m; path = ../ExercicioTVC.m; sourceTree = "<group>"; };
 		32F57C7019EC6838001BF6B2 /* MenuShouldOpen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuShouldOpen.h; path = ../MenuShouldOpen.h; sourceTree = "<group>"; };
 		32F57C7119EC6838001BF6B2 /* MenuShouldOpen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuShouldOpen.m; path = ../MenuShouldOpen.m; sourceTree = "<group>"; };
 		32F7237C19FABCD6006170CD /* CreateTrainTemp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTrainTemp.h; sourceTree = "<group>"; };
 		32F7237D19FABCD6006170CD /* CreateTrainTemp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTrainTemp.m; sourceTree = "<group>"; };
+		C507251D1A396E5D007698F5 /* CriaTreinoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriaTreinoVC.h; sourceTree = "<group>"; };
+		C507251E1A396E5D007698F5 /* CriaTreinoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriaTreinoVC.m; sourceTree = "<group>"; };
+		C50725201A397094007698F5 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		C50725211A397094007698F5 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		C52024451A26434300DDF73B /* ConfiguracoesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfiguracoesVC.h; path = ../ConfiguracoesVC.h; sourceTree = "<group>"; };
 		C52024461A26434300DDF73B /* ConfiguracoesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfiguracoesVC.m; path = ../ConfiguracoesVC.m; sourceTree = "<group>"; };
 		C52C27851A07EB690030BEA4 /* CadastroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroVC.h; sourceTree = "<group>"; };
@@ -231,8 +232,6 @@
 		C5968D961A225EB400092176 /* Traning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Traning.h; sourceTree = "<group>"; };
 		C5968D971A225EB400092176 /* Traning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Traning.m; sourceTree = "<group>"; };
 		C5B62BEC1A14056000F969D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C5B62BF11A14111C00F969D8 /* MenuLViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLViews.h; path = ../MenuLViews.h; sourceTree = "<group>"; };
-		C5B62BF21A14111C00F969D8 /* MenuLViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuLViews.m; path = ../MenuLViews.m; sourceTree = "<group>"; };
 		C5B62BF71A15236200F969D8 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		C5B62BF81A15236200F969D8 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		C5B62BF91A15236200F969D8 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -410,8 +409,6 @@
 		FF1D8DD61A38AAE100E52110 /* icone_voltar_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_voltar_tab.png; sourceTree = "<group>"; };
 		FF1D8DE11A38AC1700E52110 /* UIStaminaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStaminaButton.h; sourceTree = "<group>"; };
 		FF1D8DE21A38AC1700E52110 /* UIStaminaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStaminaButton.m; sourceTree = "<group>"; };
-		FF1D8DE41A38AFBD00E52110 /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
-		FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		FF5911321A38CC4E004208FA /* stamina_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamina_logo.png; sourceTree = "<group>"; };
 		FF5911351A38DE4F004208FA /* icone_calendario_tab_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_calendario_tab_06.png; sourceTree = "<group>"; };
 		FF951BD51A28E52A00E581AB /* GNComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNComponent.h; sourceTree = "<group>"; };
@@ -463,8 +460,8 @@
 				324E23C119E87FC400DA2FDE /* CategoriaVC.m */,
 				32F7237C19FABCD6006170CD /* CreateTrainTemp.h */,
 				32F7237D19FABCD6006170CD /* CreateTrainTemp.m */,
-				3276F1CB19F6CE2D00B2F93D /* CriaTreinoVC.h */,
-				3276F1CC19F6CE2D00B2F93D /* CriaTreinoVC.m */,
+				C507251D1A396E5D007698F5 /* CriaTreinoVC.h */,
+				C507251E1A396E5D007698F5 /* CriaTreinoVC.m */,
 				32F57C6D19EC4D16001BF6B2 /* ExercicioTVC.h */,
 				32F57C6E19EC4D16001BF6B2 /* ExercicioTVC.m */,
 				C53AAC101A1BC30E000AD02C /* ExerciseTemporary.h */,
@@ -561,12 +558,10 @@
 		C5D4DA911A3560C200FE2182 /* JLSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FF1D8DE41A38AFBD00E52110 /* CustomIOS7AlertView.h */,
-				FF1D8DE51A38AFBD00E52110 /* CustomIOS7AlertView.m */,
+				C50725201A397094007698F5 /* CustomIOS7AlertView.h */,
+				C50725211A397094007698F5 /* CustomIOS7AlertView.m */,
 				C53F23411A0D95BC00697FB4 /* JLSlideMenu.h */,
 				C53F23421A0D95BC00697FB4 /* JLSlideMenu.m */,
-				C5B62BF11A14111C00F969D8 /* MenuLViews.h */,
-				C5B62BF21A14111C00F969D8 /* MenuLViews.m */,
 				325F1FE719E7229C00001EB0 /* HideBBVC.h */,
 				325F1FE819E7229C00001EB0 /* HideBBVC.m */,
 				C5D4DA961A356C7100FE2182 /* MainMenuVC.h */,
@@ -1218,10 +1213,10 @@
 				C5EB6C0D19D9DBD300C528FC /* RunningMapVC.m in Sources */,
 				FF1D8D511A3600CA00E52110 /* StaminaUpdater.m in Sources */,
 				FF951BE31A28E52F00E581AB /* TrajectoryHistory.m in Sources */,
+				C507251F1A396E5D007698F5 /* CriaTreinoVC.m in Sources */,
 				FF13E9DA19E5BE330005BA49 /* FinishedRoute.m in Sources */,
 				32F57C6F19EC4D16001BF6B2 /* ExercicioTVC.m in Sources */,
 				32F57C7219EC6838001BF6B2 /* MenuShouldOpen.m in Sources */,
-				FF1D8DE61A38AFBD00E52110 /* CustomIOS7AlertView.m in Sources */,
 				C5D4DA801A34D91A00FE2182 /* ReadTXT.m in Sources */,
 				FF1596F619C0CBC900D9236F /* Stamina.xcdatamodeld in Sources */,
 				C52C27871A07EB690030BEA4 /* CadastroVC.m in Sources */,
@@ -1239,8 +1234,8 @@
 				FF1C5D181A07EE6F00032DC9 /* StaminaExpandTV.m in Sources */,
 				C5EB6C0A19D9DBD300C528FC /* AVCamPreviewView.m in Sources */,
 				325F1FDA19E7091C00001EB0 /* AcademiaVC.m in Sources */,
-				3276F1CD19F6CE2D00B2F93D /* CriaTreinoVC.m in Sources */,
 				C561EBD91A38F919002F3F6A /* WebServiceResponse.m in Sources */,
+				C50725221A397094007698F5 /* CustomIOS7AlertView.m in Sources */,
 				C5D4DA8F1A34EC1900FE2182 /* TipsVC.m in Sources */,
 				C53F23431A0D95BC00697FB4 /* JLSlideMenu.m in Sources */,
 				FF1596F319C0CBC900D9236F /* AppDelegate.m in Sources */,
@@ -1258,7 +1253,6 @@
 				C561EBDF1A38F941002F3F6A /* LoginViewController.m in Sources */,
 				C5EB6BF719D9DB6B00C528FC /* DayObject.m in Sources */,
 				C5D4DA861A34DA3E00FE2182 /* ExerciseTip.m in Sources */,
-				C5B62BF31A14111C00F969D8 /* MenuLViews.m in Sources */,
 				C5D4DA981A356C7100FE2182 /* MainMenuVC.m in Sources */,
 				FF13E9E319E70B9B0005BA49 /* TrajectoryFile.m in Sources */,
 				32F7237E19FABCD6006170CD /* CreateTrainTemp.m in Sources */,

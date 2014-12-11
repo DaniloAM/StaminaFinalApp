@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "UIStaminaColor.h"
-#import "MenuLViews.h"
 #import "UserData.h"
 @interface JLSlideMenu : UIViewController
 typedef enum gestureRecognizedTypes

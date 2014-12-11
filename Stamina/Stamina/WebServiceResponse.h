@@ -17,7 +17,7 @@
 +(NSString*)cadastrarComNome: (NSString *)nome eSenha: (NSString *)password email: (NSString *)email sexo:(BOOL) sexo nickName: (NSString *)nickName;
 +(NSString*)loginComEmailOuNickName: (NSString *)anything eSenha: (NSString *)password;
 +(NSString*)inserirExercicioComId: (int )idExercicio serie: (int )serie repeticoes: (int )repeticoes treino: (int )treino emailOrNickName: (NSString *)anything;
-+(NSString *)upToServerTraining: (UserTraining *) newTraining withLogin: (NSString *)login withPassword: (NSString *)password;
++(NSString *)upToServerTrainingWithArrayOfRepetition: (NSArray *) arrayOfRepetitions withArrayOfSeries: (NSArray *) arrayOfSeries withArrayOfId: (NSArray *)arrayOfID withTrainingName: (NSString *)trainingName;
 +(NSString*)getJsonComNickName: (NSString *)anything eSenha: (NSString *)password;
 +(NSString*)checkStart: (NSString *)email eSenha: (NSString *)password;
 +(NSString*)atualizaComEmail: (NSString *)email peso: (float )peso_atual sexo: (BOOL )sexo altura: (int )altura idade: (int )idade;

@@ -86,8 +86,6 @@
     _leftMenu.backgroundColor = [UIColor staminaBlackColor];
     [self.navigationController.view addSubview:_leftMenu];
     _leftWidthSize = _leftMenu.frame.size.width;
-    MenuLViews *temp= [MenuLViews alloc];
-    [temp setTemp:self.navigationController.view];
 }
 -(void)createPanGesture{
     _panLeft = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panRecognized:)];

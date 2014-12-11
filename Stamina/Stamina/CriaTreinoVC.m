@@ -23,14 +23,12 @@
     _selected =1;
     [self setInicio:nil];
     [self.view setBackgroundColor:[UIColor staminaYellowColor]];
-    CreateTrainTemp *create = [CreateTrainTemp alloc];
     _trainoNomeTxt.delegate = self;
     _tableExercicios.rowHeight = 30;
     _tableExercicios.delegate = self;
     _tableExercicios.dataSource = self;
     _tableExercicios.backgroundColor = [UIColor clearColor];
     _arrayOfDays = [NSMutableArray array];
-    [[create arrayOfExercises] removeAllObjects];
     for(int x = 0 ; x < 7; x++){
         NSNumber *num = [NSNumber numberWithInt:0];
         [_arrayOfDays addObject:num];
@@ -152,7 +150,7 @@
         [self displayAlertWithString:@"Adicione algum dia para fazer o exercicio" comCabecalho:@"Erro"];
         return;
     }
-    [self saveTraining];
+    [self performSelectorInBackground:@selector(saveTraining) withObject:self];
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)saveTraining{
@@ -161,16 +159,27 @@
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [delegate managedObjectContext];
     CreateTrainTemp *create = [CreateTrainTemp alloc];
-    for (int x = 0 ; x < [[create arrayOfExercises] count];x++){
+    NSMutableArray *arrayOfIDs = [NSMutableArray array];
+    NSMutableArray *arrayOfSer = [NSMutableArray array];
+    NSMutableArray *arrayOfRep = [NSMutableArray array];
+    for (int x = 0 ; x < [[create exercise] count];x++){
         TrainingExercises *newTraining = [NSEntityDescription insertNewObjectForEntityForName:@"TrainingExercises" inManagedObjectContext:context];
-        ExerciseTemporary *exerc = [[create exercise] objectAtIndex:x   ];
+        ExerciseTemporary *exerc = [[create exercise] objectAtIndex:x];
         Exercises *exercise = [exerc exercicio];
         [newTraining setId_exercise:exercise.exerciseID];
+        [arrayOfIDs addObject:exercise.exerciseID];
         [newTraining setTraining_name:[self.trainoNomeTxt text]];
         [newTraining setSeries:[NSNumber numberWithInteger:exerc.serie]];
+        [arrayOfSer addObject:[NSNumber numberWithInteger:exerc.serie]];
         [newTraining setTime:[NSNumber numberWithInteger:exerc.segundos+exerc.minutos*60]];
         [newTraining setRepetitions:[NSNumber numberWithInteger:exerc.repeticoes]];
+        [arrayOfRep addObject:[NSNumber numberWithInteger:exerc.repeticoes]];
         [data addExerciseWithTrainingExercise:newTraining];
+    }
+   [WebServiceResponse insereTreinoWithName:[self trainoNomeTxt].text andDays:[self arrayOfDays] andstartDate:[self startDate].date andFinalDate:[self finalDate].date andHour:[self datepicker].date];
+    UserData *user = [UserData alloc];
+    for(int x = 0 ; x < [arrayOfRep count];x++){
+        [WebServiceResponse inserirExercicioComId:[[arrayOfIDs objectAtIndex:x] intValue] serie:[[arrayOfSer objectAtIndex:x] intValue] repeticoes:[[arrayOfRep objectAtIndex:x] intValue] treino:1 emailOrNickName:[user nickName]];
     }
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
@@ -180,7 +189,7 @@
     NSDateComponents *addDay = [[NSDateComponents alloc] init];
     comp = comp;
     [addDay setDay:1];
-    
+    [create setExercise:Nil];
     for(;;) {
         
         comp = [calendar components:NSWeekdayCalendarUnit fromDate:date];
@@ -301,8 +310,6 @@
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    CreateTrainTemp *tem = [CreateTrainTemp alloc];
-    [tem setExercise:nil];    
 }
 -(IBAction)horaInicial: (id)sender{
     [self launchDialog:sender];

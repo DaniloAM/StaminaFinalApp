@@ -53,18 +53,18 @@
 }
 
 
-+(NSString *)upToServerTraining: (UserTraining *) newTraining withLogin: (NSString *)login withPassword: (NSString *)password {
-    login = [login lowercaseString];
-    UserTraining *temp = newTraining;
-    NSArray *array = [temp exercisesArray];
++(NSString *)upToServerTrainingWithArrayOfRepetition: (NSArray *) arrayOfRepetitions withArrayOfSeries: (NSArray *) arrayOfSeries withArrayOfId: (NSArray *)arrayOfID withTrainingName: (NSString *)trainingName {
     NSMutableArray *trainingsArray = [NSMutableArray array];
-    for (int x = 0; x < [array count]; x++) {
-        TrainingExercises *temp = [array objectAtIndex:x];
+    for (int x = 0; x < [arrayOfID count]; x++) {
+        NSLog(@"temp %@", [arrayOfID objectAtIndex:x]);
+        NSLog(@"temp %@", [arrayOfRepetitions objectAtIndex:x]);
+        NSLog(@"temp %@", [arrayOfSeries objectAtIndex:x]);
+        NSLog(@"temp %@", trainingName);
         NSDictionary *trainingDictionary =[NSDictionary dictionaryWithObjectsAndKeys:
-                                           [temp id_exercise], @"id_exercise",
-                                           [temp training_name], @"trainingName",
-                                           [temp series], @"series",
-                                           [temp repetitions], @"repetitions",
+                                           [arrayOfID objectAtIndex:x], @"id_exercise",
+                                           trainingName, @"trainingName",
+                                           [arrayOfSeries objectAtIndex:x], @"series",
+                                           [arrayOfRepetitions objectAtIndex:x], @"repetitions",
                                            nil];
         [trainingsArray addObject:trainingDictionary];
     }
@@ -73,13 +73,13 @@
     NSString *jsonString = [[NSString alloc] initWithData:jsonData2 encoding:NSUTF8StringEncoding];
     NSData *jsonData = [jsonString dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
-    return [WebServiceResponse cadastrar:jsonData :login :password];
+    return [WebServiceResponse cadastrar:jsonData];
 }
-+(NSString*)cadastrar:(NSData*)jsonCadastro : (NSString *)strUser : (NSString *)password{
-    strUser = [strUser lowercaseString];
++(NSString*)cadastrar:(NSData*)jsonCadastro{
     NSString *url = @"http://54.207.112.185/joao/teste.php";
+    UserData *u=[UserData alloc];
     NSString *strJson = [[NSString alloc] initWithData:jsonCadastro encoding:NSUTF8StringEncoding];
-    NSString *post = [NSString stringWithFormat:@"emailOrNick=%@&password=%@&json=%@", strUser, password, strJson];
+    NSString *post = [NSString stringWithFormat:@"id_aluno=%d&json=%@", [u userID], strJson];
     return [self doTheRequest:post andUrl:url];
 }
 +(NSString*)checkStart: (NSString *)email eSenha: (NSString *)password{
