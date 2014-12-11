@@ -1095,10 +1095,7 @@
 				FF1D8D9A1A38A9B900E52110 /* s_icone_add_trajeto.png in Resources */,
 				FF5911381A39BA5B004208FA /* icone_serie.png in Resources */,
 				C5B62C591A1527F600F969D8 /* icone_calendario_31.png in Resources */,
-<<<<<<< HEAD
-=======
 				C5B62C091A1525F400F969D8 /* Lato-Black.ttf in Resources */,
->>>>>>> FETCH_HEAD
 				FF1D8DBD1A38AA3F00E52110 /* Icone_facebook.png in Resources */,
 				C561EBE31A38F959002F3F6A /* Default@2x.png in Resources */,
 				C5D4DA821A34D92700FE2182 /* exercises.txt in Resources */,
