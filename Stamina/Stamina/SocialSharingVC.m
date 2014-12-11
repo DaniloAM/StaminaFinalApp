@@ -236,12 +236,18 @@
     _shareView.layer.masksToBounds = true;
     _shareView.center = self.view.center;
     
+    CGRect frame = [[self shareView] frame];
+    
+    frame.origin.y -= 100;
+    
+    [[self shareView] setFrame:frame];
+    
     UIButton *facebookBtn, *instagramBtn;
     UIImageView *facebookIcon, *instagramIcon;
     
 
-    facebookBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _shareView.frame.size.width / 5, _shareView.frame.size.height / 2.5)];
-    instagramBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _shareView.frame.size.width / 5, _shareView.frame.size.height / 2.5)];
+    facebookBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _shareView.frame.size.width / 5, _shareView.frame.size.width / 5)];
+    instagramBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, _shareView.frame.size.width / 5, _shareView.frame.size.width / 5)];
     
     facebookBtn.center = CGPointMake(_shareView.frame.size.width / 2 / 2, _shareView.frame.size.height / 2);
     instagramBtn.center = CGPointMake((_shareView.frame.size.width / 2) + facebookBtn.center.x, _shareView.frame.size.height / 2);
