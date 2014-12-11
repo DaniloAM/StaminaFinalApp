@@ -154,33 +154,25 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)saveTraining{
-    UserData *data = [UserData alloc];
     CalendarObject *calendarObject = [CalendarObject alloc];
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [delegate managedObjectContext];
     CreateTrainTemp *create = [CreateTrainTemp alloc];
-    NSMutableArray *arrayOfIDs = [NSMutableArray array];
-    NSMutableArray *arrayOfSer = [NSMutableArray array];
-    NSMutableArray *arrayOfRep = [NSMutableArray array];
+    NSError *error;
     for (int x = 0 ; x < [[create exercise] count];x++){
         TrainingExercises *newTraining = [NSEntityDescription insertNewObjectForEntityForName:@"TrainingExercises" inManagedObjectContext:context];
         ExerciseTemporary *exerc = [[create exercise] objectAtIndex:x];
         Exercises *exercise = [exerc exercicio];
-        [newTraining setId_exercise:exercise.exerciseID];
-        [arrayOfIDs addObject:exercise.exerciseID];
+        int x = [[exercise  exerciseID] intValue];
+        NSNumber *number = [NSNumber numberWithInt:x];
+        [newTraining setId_exercise:number];
         [newTraining setTraining_name:[self.trainoNomeTxt text]];
         [newTraining setSeries:[NSNumber numberWithInteger:exerc.serie]];
-        [arrayOfSer addObject:[NSNumber numberWithInteger:exerc.serie]];
         [newTraining setTime:[NSNumber numberWithInteger:exerc.segundos+exerc.minutos*60]];
         [newTraining setRepetitions:[NSNumber numberWithInteger:exerc.repeticoes]];
-        [arrayOfRep addObject:[NSNumber numberWithInteger:exerc.repeticoes]];
-        [data addExerciseWithTrainingExercise:newTraining];
+        [context save:&error];
     }
    [WebServiceResponse insereTreinoWithName:[self trainoNomeTxt].text andDays:[self arrayOfDays] andstartDate:[self startDate].date andFinalDate:[self finalDate].date andHour:[self datepicker].date];
-    UserData *user = [UserData alloc];
-    for(int x = 0 ; x < [arrayOfRep count];x++){
-        [WebServiceResponse inserirExercicioComId:[[arrayOfIDs objectAtIndex:x] intValue] serie:[[arrayOfSer objectAtIndex:x] intValue] repeticoes:[[arrayOfRep objectAtIndex:x] intValue] treino:1 emailOrNickName:[user nickName]];
-    }
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
     NSDate *date = [NSDate dateWithTimeInterval:0 sinceDate:[self startDate].date];
@@ -205,6 +197,22 @@
         
     }
     
+}
+-(void)veTodosOsTreinosSalvos: (NSString *)str{
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [delegate managedObjectContext];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"TrainingExercises"];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"training_name=%@",str];
+    [request setPredicate:pred];
+    NSError *error;
+    NSArray *obj = [context executeFetchRequest:request error:&error];
+    
+    for(int x=0 ; x < [obj count];x++){
+        TrainingExercises  *str = [obj objectAtIndex:x];
+        NSLog(@"%@", str.training_name);
+        NSLog(@"%@", str.id_exercise);
+        
+    }
 }
 -(BOOL)hasTrainingWithName: (NSString *)str{
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];

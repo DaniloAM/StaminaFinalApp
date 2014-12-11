@@ -1,30 +1,24 @@
-102300
+104001
 5
-Dica 10
-Dica 20
-Dica 30
-Dica 40
-Dica 50
-Exercicio zika1
+Dica 1
+Dica 2
+Dica 3
+Dica 4
+Dica 5
+Crucifixo
 fr_peitoral
 costas
-102301
-5
-Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11Dica 11
-Dica 11Dica 11Dica 11Dica 11
-Dica 31
-Dica 41
-Dica 51
-Exercicio zika12
-tr_antebraco
+103001
+2
+Dica Rosca Direta
+Dica Rosca Direta
+Rosca Direta
+fr_biceps
 costas
-102302
-5
-Dica 12
-Dica 22
-Dica 32
-Dica 42
-Dica 52
-Exercicio zika1r
-tr_ombros
+101001
+2
+Dica abdominal Direta
+Dica abdominal Direta
+Abdominal
+fr_abdominal
 costas

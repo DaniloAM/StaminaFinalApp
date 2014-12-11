@@ -364,6 +364,9 @@
     int identifier = 0;
     
     for(int x = 0; x < [array count]; x++) {
+        TrainingExercises *temp= [array objectAtIndex:x];
+        NSLog(@"%@", temp.id_exercise);
+        NSLog(@"%@", temp.training_name);
         
         identifier = [[[array objectAtIndex:x] id_exercise] intValue];
         Exercises *ex = [list returnExerciseWithIdentifier:identifier];
@@ -436,27 +439,27 @@
 //**************************************
 
 -(void)addTrainingToListExample {
-    
-    UserData *data = [UserData alloc];
-    CalendarObject *calendar = [CalendarObject alloc];
-    
-    NSDateFormatter *dformat = [[NSDateFormatter alloc]init];
-    [dformat setDateFormat:@"yyyy/MM/dd - HH:mm"];
-    
-    
-    NSString *str = [NSString stringWithFormat:@"%04d/%02d/%02d - 12:00", 2014, 10, 15];
-    NSDate *date = [dformat dateFromString:str];
-    
-    
-    TrainingExercises *ex;
-    
-    //Make a loop and add all exercises from training needed
-    [data addExerciseWithTrainingExercise:ex];
-    
-    
-    //Then a second loop of schedules in dates
-    [calendar scheduleTrainingNamed:@"Treino Chavão" inDate:date];
-    
+//    
+//   // UserData *data = [UserData alloc];
+//    CalendarObject *calendar = [CalendarObject alloc];
+//    
+//    NSDateFormatter *dformat = [[NSDateFormatter alloc]init];
+//    [dformat setDateFormat:@"yyyy/MM/dd - HH:mm"];
+//    
+//    
+//    NSString *str = [NSString stringWithFormat:@"%04d/%02d/%02d - 12:00", 2014, 10, 15];
+//    NSDate *date = [dformat dateFromString:str];
+//    
+//    
+//    //TrainingExercises *ex;
+//    
+//    //Make a loop and add all exercises from training needed
+//   // [data addExerciseWithTrainingExercise:ex];
+//    
+//    
+//    //Then a second loop of schedules in dates
+//    //[calendar scheduleTrainingNamed:@"Treino Chavão" inDate:date];
+//    
 }
 
 
