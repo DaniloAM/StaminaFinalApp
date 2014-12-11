@@ -191,7 +191,7 @@
         CreateTrainTemp *cre = [CreateTrainTemp alloc];
         NSMutableArray *array = [NSMutableArray arrayWithArray:[cre exercise]];
         [array addObjectsFromArray:[self fullArray]];
-        [cre setExercise:[NSArray arrayWithArray:array]];
+        [cre setExercise:[NSMutableArray arrayWithArray:array]];
         [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:3] animated:YES];
         return;
     }

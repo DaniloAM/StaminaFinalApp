@@ -34,5 +34,6 @@
 @property (weak, nonatomic) IBOutlet UIView *viewAux5;
 @property (weak, nonatomic) IBOutlet UIButton *buttonFinalDay;
 @property (weak, nonatomic) IBOutlet UIButton *buttonStartDate;
+@property NSIndexPath *indexPath;
 @property int whichView;
 @end

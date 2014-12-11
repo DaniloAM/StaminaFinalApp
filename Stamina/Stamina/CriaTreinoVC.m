@@ -19,7 +19,7 @@
     
     [super viewDidLoad];
     [self.navigationItem setTitle:@"Criar Treino"];
-    
+    _indexPath = Nil;
     _selected =1;
     [self setInicio:nil];
     [self.view setBackgroundColor:[UIColor staminaYellowColor]];
@@ -136,7 +136,7 @@
         return;
     }
     if([self hasTrainingWithName:[self trainoNomeTxt].text]){
-        [self displayAlertWithString:@"Ja existe um treino com esse" comCabecalho:@"Escolha outro nome"];
+        [self displayAlertWithString:@"Ja existe um treino com esse nome" comCabecalho:@"Escolha outro nome"];
         return;
     }
     BOOL hasDay = false;
@@ -298,7 +298,13 @@
     
 }
 -(void)function3{
-    
+    if(_indexPath==nil)
+        return;
+    CreateTrainTemp *temp = [CreateTrainTemp alloc];
+    [[temp exercise] removeObjectAtIndex:_indexPath.row];
+    _indexPath=nil;
+    [_tableExercicios reloadData];
+    [self hideBarWithAnimation:1];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self hideBarWithAnimation:1];
@@ -320,6 +326,7 @@
 -(IBAction)diaFim: (id)sender{
     [self launchDialog:sender];
 }
+
 
 - (void)launchDialog:(id)sender
 {   CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
@@ -371,6 +378,17 @@
     }
     [btn setTitle:dateString forState:UIControlStateNormal];
     [alertView close];
+    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self showBarWithAnimation:1];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if(indexPath!=nil){
+        UITableViewCell *cell2 = [tableView cellForRowAtIndexPath:_indexPath];
+        cell2.alpha = 1;
+    }
+    _indexPath = indexPath;
+    cell.alpha = 0.5;
     
 }
 -(void)atualiza{

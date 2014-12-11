@@ -123,7 +123,7 @@
     view.tintColor = [UIColor blackColor];
     // Text Color
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
-    [header.textLabel setTextColor:[UIColor colorWithRed:250 green:217 blue:0 alpha:1]];
+    [header.textLabel setTextColor:[UIColor staminaYellowColor]];
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self hideBarWithAnimation:1];
